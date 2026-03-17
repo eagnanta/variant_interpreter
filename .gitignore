@@ -1,0 +1,6 @@
+
+data/variant_summary.txt.gz
+data/*.gz
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
