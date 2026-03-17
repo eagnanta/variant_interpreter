@@ -4,3 +4,7 @@ data/*.gz
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+logs/
+*.out
+*.err
+*.sh
