@@ -8,3 +8,9 @@ logs/
 *.out
 *.err
 *.sh
+.env
+*.env
+data/Cosmic_*.tar
+data/Cosmic_*.tsv
+data/README_Cosmic_*.txt
+data/interpretations_partial.csv

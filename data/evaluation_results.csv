@@ -1,0 +1,457 @@
+GeneSymbol,Name,significance_clean,consequence,impact,sift_score,polyphen_score,cosmic_match,cosmic_count,llm_interpretation,llm_verdict,expected_verdict,agreement
+BRCA1,NM_007294.4(BRCA1):c.190T>G (p.Cys64Gly),Pathogenic,stop_lost,MODERATE,0.0,0.781,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.781, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",damaging,damaging,True
+BRCA1,"BRCA1, 6-KB DUP, EX13",Pathogenic,,,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",damaging,damaging,True
+BRCA1,NM_007294.4(BRCA1):c.116G>A (p.Cys39Tyr),Pathogenic,missense_variant,MODERATE,0.0,0.884,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Cys to Tyr is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.884, this variant is likely to be probably damaging to the protein.
+4. Cancer evidence: There is no evidence of this variant being observed in tumor samples in COSMIC.",damaging,damaging,True
+BRCA1,NM_007294.4(BRCA1):c.116G>T (p.Cys39Phe),Likely pathogenic,missense_variant,MODERATE,0.0,0.845,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Cys to Phe is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.845, this variant is likely to be probably damaging to the protein.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",damaging,damaging,True
+BRCA1,NM_007294.4(BRCA1):c.1175_1216del (p.Leu392_Asn406delinsHis),Pathogenic,inframe_deletion,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score is not available, but given the inframe deletion consequence, the amino acid change may have a significant impact on protein function.
+3. Protein damage: The PolyPhen score is not available, but the fact that this is an inframe deletion suggests potential disruption to the protein structure, which could be damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no match was found.",uncertain,damaging,False
+BRCA1,NM_007294.4(BRCA1):c.134+5G>C,Likely pathogenic,splice_donor_5th_base_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the consequence type is a splice_donor_5th_base_variant, it is likely to have a significant impact on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign. However, the consequence type suggests potential disruption to normal splicing, which could lead to protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, indicating no known association with cancer.",damaging,damaging,True
+TP53,NM_000546.6(TP53):c.772G>A (p.Glu258Lys),Likely pathogenic,missense_variant,MODERATE,0.0,,True,107,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Glu to Lys at position 258 is predicted to be deleterious.
+3. Protein damage: Since the PolyPhen score is not available, we cannot directly assess the damage. However, given the moderate impact and deleterious SIFT score, it is reasonable to suspect that the variant may have a negative effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 107 tumor samples in the COSMIC database.",damaging,damaging,True
+TP53,NM_000546.6(TP53):c.733G>T (p.Gly245Cys),Pathogenic,missense_variant,MODERATE,0.0,,True,122,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score of 0.0 indicates that the amino acid change (p.Gly245Cys) is deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the moderate impact and deleterious SIFT score suggest that the variant is likely to have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 122 tumor samples in COSMIC, suggesting a potential role in cancer.",damaging,damaging,True
+TP53,NM_000546.6(TP53):c.747G>T (p.Arg249Ser),Likely pathogenic,missense_variant,MODERATE,0.01,,True,253,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change from Arginine to Serine is predicted to be deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the SIFT score and the moderate impact level suggest that the variant is likely to have a negative effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 253 tumor samples in the COSMIC database.",damaging,damaging,True
+TP53,NM_000546.6(TP53):c.469G>T (p.Val157Phe),Likely pathogenic,missense_variant,MODERATE,0.0,,True,282,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Valine to Phenylalanine is predicted to be deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the SIFT score and the moderate impact level suggest that the variant is likely to cause damage to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 282 tumor samples in COSMIC, suggesting a potential role in cancer.",damaging,damaging,True
+TP53,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr),Likely pathogenic,missense_variant,MODERATE,0.0,,True,99,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Cys to Tyr at position 242 is predicted to be deleterious.
+3. Protein damage: Since the PolyPhen score is not available, we cannot directly assess the damage. However, given the moderate impact and deleterious SIFT score, it is reasonable to suspect that the variant may have a negative effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 99 tumor samples in the COSMIC database.",damaging,damaging,True
+EGFR,NM_005228.5(EGFR):c.2155G>T (p.Gly719Cys),Pathogenic,missense_variant,MODERATE,0.0,1.0,True,76,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Gly to Cys at position 719 is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 1.0, this variant is likely to be probably damaging to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 76 tumor samples documented in COSMIC.",damaging,damaging,True
+EGFR,NM_005228.5(EGFR):c.2127_2129del (p.Glu709_Thr710delinsAsp),Pathogenic,inframe_deletion,MODERATE,,,True,21,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score is not available, but given the moderate impact and in-frame deletion consequence, the amino acid change may have a significant effect on protein function.
+3. Protein damage: The PolyPhen score is not available, but the variant's moderate impact and pathogenic classification suggest it may cause damage to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 21 tumor samples in COSMIC, suggesting a potential role in cancer.",damaging,damaging,True
+EGFR,NM_005228.5(EGFR):c.2156G>C (p.Gly719Ala),Pathogenic,missense_variant,MODERATE,0.0,0.995,True,135,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.995, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 135 tumor samples.",damaging,damaging,True
+EGFR,NM_005228.5(EGFR):c.2303G>T (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Ser to Ile at position 768 is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.998, this variant is likely to be probably damaging to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 120 tumor samples in the COSMIC database.",damaging,damaging,True
+EGFR,NM_005228.5(EGFR):c.2303_2304delinsTT (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score of 0.0 indicates that the amino acid change from Serine to Ileucine at position 768 is deleterious.
+3. Protein damage: The PolyPhen score of 0.998 suggests that this variant is probably damaging to the protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 120 tumor samples in the COSMIC database.",damaging,damaging,True
+KRAS,NM_004985.5(KRAS):c.34G>C (p.Gly12Arg),Likely pathogenic,missense_variant,MODERATE,0.01,,True,643,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change is predicted to be deleterious.
+3. Protein damage: Unfortunately, the PolyPhen score is not available for this variant. However, given the moderate impact and deleterious SIFT score, it is likely that the variant has a significant effect on protein function.
+4. Cancer evidence: Yes, this variant has been observed in tumor samples, with evidence of its presence in 643 tumor samples in COSMIC.",damaging,damaging,True
+KRAS,NM_004985.5(KRAS):c.38G>A (p.Gly13Asp),Pathogenic,missense_variant,MODERATE,0.04,,True,1310,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.04, the amino acid change is likely deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the moderate impact and pathogenic classification suggest that the variant may cause significant protein damage.
+4. Cancer evidence: This variant has been observed in 1310 tumor samples in COSMIC, indicating a potential association with cancer.",damaging,damaging,True
+KRAS,NM_033360.4(KRAS):c.175G>A (p.Ala59Thr),Pathogenic,missense_variant,MODERATE,0.03,,True,39,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.03, the amino acid change from alanine to threonine is predicted to be deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the SIFT score and the moderate impact level suggest that the variant is likely to have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 39 tumor samples in the COSMIC database.",damaging,damaging,True
+KRAS,NM_004985.5(KRAS):c.35G>A (p.Gly12Asp),Likely pathogenic,missense_variant,MODERATE,0.04,,True,2527,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.04, the amino acid change is predicted to be deleterious.
+3. Protein damage: Unfortunately, the PolyPhen score is not available to directly assess protein damage. However, given the moderate impact and deleterious SIFT score, it is reasonable to infer that the variant may have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 2527 tumor samples in COSMIC, suggesting a potential role in oncogenesis.",damaging,damaging,True
+KRAS,NM_004985.5(KRAS):c.35G>T (p.Gly12Val),Pathogenic,missense_variant,MODERATE,0.0,,True,2122,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score of 0.0 indicates that the amino acid change (p.Gly12Val) is deleterious.
+3. Protein damage: Although the PolyPhen score is not available, the consequence type (missense_variant) and impact level (MODERATE) suggest that the variant may have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence in 2122 tumor samples, suggesting a potential role in oncogenesis.",damaging,damaging,True
+PTEN,NM_000314.8(PTEN):c.386G>A (p.Gly129Glu),Likely pathogenic,missense_variant,MODERATE,0.0,1.0,True,16,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 1.0, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 16 tumor samples.",damaging,damaging,True
+PTEN,NM_000314.8(PTEN):c.697C>T (p.Arg233Ter),Likely pathogenic,stop_gained,HIGH,,,True,150,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: The SIFT score is not available, but given the consequence type is stop_gained, it is likely that the amino acid change is deleterious, as it results in a premature termination of the protein sequence.
+3. Protein damage: The PolyPhen score is not available, but the consequence type is stop_gained, which typically has a significant impact on protein function, suggesting that the variant is likely to be damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 150 tumor samples, indicating a potential association with cancer.",damaging,damaging,True
+PTEN,NM_000314.8(PTEN):c.347_351del (p.Asp116fs),Pathogenic,frameshift_variant,HIGH,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score is not available, but given the consequence type is a frameshift variant with a high impact, it is likely that the amino acid change is deleterious.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is a frameshift variant with a high impact, it is likely to cause significant protein damage, although the exact level of damage (probably damaging, possibly damaging, or benign) cannot be determined.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",damaging,damaging,True
+PTEN,NM_000314.8(PTEN):c.388C>T (p.Arg130Ter),Pathogenic,stop_gained,HIGH,,,True,125,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Although the SIFT score is not available, the consequence type is a stop_gained, which typically results in a loss of function, suggesting the amino acid change is likely deleterious.
+3. Protein damage: Since the PolyPhen score is not available, we cannot directly assess the damage. However, given the high impact and stop_gained consequence, it is likely that the variant has a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 125 tumor samples in COSMIC, suggesting a potential role in oncogenesis.",damaging,damaging,True
+PTEN,NM_000314.8(PTEN):c.253+1G>A,Pathogenic,splice_donor_variant,HIGH,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: The SIFT score is not available, but given the variant's consequence as a splice_donor_variant with a HIGH impact, it is likely that the amino acid change would be deleterious.
+3. Protein damage: The PolyPhen score is not available, but the variant's consequence as a splice_donor_variant with a HIGH impact suggests that it may be damaging to protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",damaging,damaging,True
+BRCA1,NM_007294.4(BRCA1):c.2207A>C (p.Glu736Ala),Likely benign,missense_variant,MODIFIER,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot assess if the variant is probably damaging, possibly damaging, or benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",neutral,neutral,True
+BRCA1,NM_007294.4(BRCA1):c.4036G>A (p.Glu1346Lys),Likely benign,missense_variant,MODIFIER,,,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated based on this score. 
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score.
+4. Cancer evidence: This variant has been observed in tumor samples, with 2 observations in COSMIC, suggesting it may be present in cancerous tissues.",neutral,neutral,True
+BRCA1,NM_007294.4(BRCA1):c.4676-7C>T,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant's consequence type as a splice_region_variant and its impact level as LOW, it is possible that the variant may not significantly alter protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the Likely benign clinical significance and LOW impact level, the variant may not cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be associated with cancer.",neutral,neutral,True
+BRCA1,NM_007294.4(BRCA1):c.4837A>T (p.Ser1613Cys),Likely benign,missense_variant,MODERATE,0.02,0.848,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Based on the SIFT score of 0.02, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.848, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",uncertain,neutral,False
+BRCA1,NM_007294.4(BRCA1):c.5152+10A>G,Likely benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's intron_variant consequence and MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+TP53,NM_000546.6(TP53):c.639A>G (p.Arg213=),Benign,synonymous_variant,LOW,,,True,17,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available, we cannot directly determine if the amino acid change is deleterious or tolerated. However, given that the consequence is a synonymous variant, it is likely that the amino acid change is tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, the consequence type being synonymous suggests that the variant may be benign.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with 17 observations reported.",uncertain,neutral,False
+TP53,NM_000546.6(TP53):c.993+12T>C,Likely benign,intron_variant,MODIFIER,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot determine if the amino acid change is deleterious or tolerated based on this score. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot directly assess the variant's potential to cause protein damage. However, considering the variant's location in an intron and its MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+TP53,NM_000546.6(TP53):c.108G>A (p.Pro36=),Benign,missense_variant,LOW,,,True,7,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the variant is a missense variant with a low impact, it may be less likely to have a significant functional impact.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. 
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 7 tumor samples, suggesting it may be present in some cancer cases.",uncertain,neutral,False
+TP53,NM_000546.6(TP53):c.885T>C (p.Pro295=),Likely benign,synonymous_variant,LOW,,,True,3,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we cannot directly determine if the amino acid change is deleterious or tolerated. However, given that the consequence type is a synonymous_variant, it is likely that the amino acid change is tolerated, as the variant does not alter the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, so we cannot directly assess the level of protein damage. However, considering the consequence type is synonymous, it is likely that the variant is benign, as it does not change the amino acid sequence.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 3 tumor samples, suggesting that it may be present in cancerous tissues, although its role in cancer is unclear.",neutral,neutral,True
+TP53,NM_000546.6(TP53):c.666G>T (p.Pro222=),Likely benign,synonymous_variant,LOW,,,True,6,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, but given the consequence type is a synonymous variant, the amino acid change is likely tolerated as it does not alter the protein sequence.
+3. Protein damage: The PolyPhen score is not available, but since this is a synonymous variant with a low impact level, it is likely benign and does not damage the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 6 tumor samples in COSMIC.",neutral,neutral,True
+EGFR,NM_005228.5(EGFR):c.2166G>A (p.Ala722=),Likely benign,synonymous_variant,LOW,,,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, but given the consequence type is a synonymous variant, the amino acid change is likely tolerated as it does not alter the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is synonymous and has a low impact, it is likely benign in terms of protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples, with 2 observations in COSMIC, suggesting it may be present in some cancer cases.",neutral,neutral,True
+EGFR,NM_005228.5(EGFR):c.2232C>T (p.Ile744=),Likely benign,synonymous_variant,LOW,,,True,1,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we cannot directly determine if the amino acid change is deleterious or tolerated. However, given that the consequence is a synonymous variant, it is likely that the amino acid change is tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, the consequence type being a synonymous variant suggests that the variant is likely benign.
+4. Cancer evidence: This variant has been observed in 1 tumor sample in COSMIC, indicating that it may be present in cancerous tissues, although its role in cancer is unclear.",uncertain,neutral,False
+EGFR,NM_005228.5(EGFR):c.2280C>T (p.Leu760=),Likely benign,synonymous_variant,LOW,,,True,1,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, but given the variant is a synonymous variant, it is likely that the amino acid change is tolerated, as it does not alter the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is synonymous and has a low impact, it is likely to be benign, with no significant damage to the protein.
+4. Cancer evidence: This variant has been observed in 1 tumor sample in COSMIC, suggesting it may be present in some cancer cases, although its role in cancer is unclear.",neutral,neutral,True
+EGFR,NM_005228.5(EGFR):c.2289C>G (p.Ala763=),Likely benign,synonymous_variant,LOW,,,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, but given the consequence type is a synonymous variant, the amino acid change is likely tolerated as it does not alter the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is synonymous and has a low impact, it is likely benign in terms of protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples, with 2 observations in COSMIC, suggesting it may be present in some cancer cases.",neutral,neutral,True
+EGFR,NM_005228.5(EGFR):c.2329C>T (p.Leu777=),Likely benign,synonymous_variant,LOW,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we cannot directly determine if the amino acid change is deleterious or tolerated. However, given that the consequence type is a synonymous variant, which does not change the amino acid sequence, it is likely that the variant is tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot assess the variant's potential to cause protein damage based on this score. However, considering the variant is synonymous and has a low impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+KRAS,NM_033360.4(KRAS):c.290+74T>G,Benign,intron_variant,MODIFIER,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's location in an intron and its MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it is unlikely to be associated with cancer.",uncertain,neutral,False
+KRAS,NM_033360.4(KRAS):c.290+97A>C,Benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's location in an intron and its MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it is unlikely to be associated with cancer.",uncertain,neutral,False
+KRAS,NM_033360.4(KRAS):c.290+97A>T,Benign,intron_variant,MODIFIER,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's location in an intron and its MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it is unlikely to be associated with cancer.",uncertain,neutral,False
+KRAS,NM_033360.4(KRAS):c.450+40A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is in a non-coding region, it may not directly impact the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, the variant is described as a non_coding_transcript_exon_variant with a MODIFIER impact, suggesting it may not significantly damage protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",uncertain,neutral,False
+KRAS,NM_033360.4(KRAS):c.450+92A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is a non_coding_transcript_exon_variant, it may not directly affect the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, the variant's consequence as a non_coding_transcript_exon_variant suggests it may not significantly impact protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",uncertain,neutral,False
+PTEN,NM_000314.8(PTEN):c.802-18C>T,Likely benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant is an intron_variant with a MODIFIER impact, it is likely to have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's location in an intron and its MODIFIER impact, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+PTEN,NM_000314.8(PTEN):c.802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant's consequence type as a splice_region_variant with a LOW impact, it may not significantly alter protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the Likely benign classification and LOW impact, the variant may not cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+PTEN,NM_000314.8(PTEN):c.802-4_802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the variant's consequence type as a splice_region_variant with a LOW impact level, it may have a minimal effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the variant's classification as Likely benign, it is possible that the variant may not cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be associated with cancer.",neutral,neutral,True
+PTEN,NM_000314.8(PTEN):c.802-4_802-3del,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant's consequence type as a splice_region_variant with a LOW impact, it may not significantly alter protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign based on this score. However, considering the Likely benign classification and LOW impact, the variant may not cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting it may not be associated with cancer.",neutral,neutral,True
+PTEN,NM_000314.4(PTEN):c.-1060C>G,Likely benign,,,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated.
+3. Protein damage: The PolyPhen score is not available, so we cannot assess whether the variant is probably damaging, possibly damaging, or benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",neutral,neutral,True
+BRCA1,NM_007294.4(BRCA1):c.4219C>G (p.Leu1407Val),Uncertain significance,missense_variant,MODERATE,0.0,0.578,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Leu to Val at position 1407 is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.578, the variant is possibly damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",uncertain,uncertain,True
+BRCA1,NM_007294.4(BRCA1):c.4402A>G (p.Asn1468Asp),Uncertain significance,missense_variant,MODERATE,0.03,0.497,False,0,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.03, the amino acid change is likely deleterious, as a score below 0.05 indicates a deleterious effect.
+3. Protein damage: Based on the PolyPhen score of 0.497, the variant is possibly damaging, as scores between 0.453 and 0.956 are considered possibly damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as indicated by the ""No COSMIC match found"" result.",uncertain,uncertain,True
+BRCA1,NM_007294.4(BRCA1):c.4456A>T (p.Ser1486Cys),Uncertain significance,missense_variant,MODERATE,0.0,0.848,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from serine to cysteine at position 1486 is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.848, this variant is likely to be probably damaging to the protein function.
+4. Cancer evidence: There is no evidence of this variant being observed in tumor samples in COSMIC, as no match was found.",damaging,uncertain,False
+BRCA1,NM_007294.4(BRCA1):c.4807_4821del (p.Pro1603_Val1607del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the inframe deletion consequence and moderate impact, it is possible that the variant may have some effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign. However, the inframe deletion consequence suggests that the variant may not completely disrupt protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be a common cancer-associated variant.",uncertain,uncertain,True
+BRCA1,NM_007294.4(BRCA1):c.4414C>T (p.Leu1472Phe),Uncertain significance,missense_variant,MODERATE,0.3,0.684,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.3, the amino acid change from Leu to Phe is predicted to be tolerated, suggesting that the variant may not have a significant impact on protein function.
+3. Protein damage: Based on the PolyPhen score of 0.684, the variant is possibly damaging, indicating that it may have some level of impact on the protein's function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be associated with cancer.",uncertain,uncertain,True
+TP53,NM_000546.6(TP53):c.875A>T (p.Lys292Ile),Uncertain significance,missense_variant,MODERATE,0.05,,True,1,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.05, the amino acid change from Lys to Ile at position 292 is likely deleterious.
+3. Protein damage: The PolyPhen score is not available, but given the moderate impact and the SIFT score, the variant may have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in at least 1 tumor sample in COSMIC, suggesting potential involvement in cancer.",uncertain,uncertain,True
+TP53,NM_000546.6(TP53):c.718_741del (p.Ser240_Asn247del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the inframe deletion consequence and moderate impact, it is possible that the variant may have some effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign. However, the inframe deletion consequence suggests that the variant may not completely disrupt protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be a common cancer-associated mutation.",uncertain,uncertain,True
+TP53,NM_000546.6(TP53):c.1051A>G (p.Lys351Glu),Uncertain significance,missense_variant,MODERATE,0.08,,True,5,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.08, the amino acid change from Lys to Glu at position 351 is likely deleterious.
+3. Protein damage: Since the PolyPhen score is not available, we cannot directly assess the damage. However, given the moderate impact and deleterious SIFT score, the variant may have a significant effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with 5 observations in COSMIC, suggesting a potential link to cancer.",uncertain,uncertain,True
+TP53,NM_000546.6(TP53):c.400T>C (p.Phe134Leu),Uncertain significance,missense_variant,MODERATE,0.0,,True,70,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Phe to Leu at position 134 is predicted to be deleterious.
+3. Protein damage: Since the PolyPhen score is not available, we cannot directly assess the likelihood of damage. However, given the moderate impact and deleterious SIFT score, it is reasonable to suspect that the variant may have a negative effect on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 70 tumor samples in the COSMIC database.",uncertain,uncertain,True
+TP53,NM_000546.6(TP53):c.-29+4A>C,Uncertain significance,splice_donor_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change. However, given the variant's location in a splice donor region, it may potentially affect splicing.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign. However, the variant's location in a splice donor region suggests it could potentially disrupt normal splicing.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",uncertain,uncertain,True
+EGFR,NM_005228.5(EGFR):c.2155G>A (p.Gly719Ser),Uncertain significance,missense_variant,MODERATE,0.0,0.999,True,104,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score of 0.0 suggests that the amino acid change from Gly to Ser at position 719 is deleterious.
+3. Protein damage: The PolyPhen score of 0.999 indicates that the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with 104 reported observations, suggesting a potential association with cancer.",damaging,uncertain,False
+EGFR,NM_005228.5(EGFR):c.2065G>C (p.Val689Leu),Uncertain significance,missense_variant,MODERATE,0.0,0.612,True,3,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Valine to Leucine is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.612, the variant is possibly damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with 3 observations in COSMIC, suggesting potential involvement in cancer.",uncertain,uncertain,True
+EGFR,NM_005228.5(EGFR):c.2117T>C (p.Ile706Thr),Uncertain significance,missense_variant,MODERATE,0.0,0.993,True,3,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score of 0.0 suggests that the amino acid change from Ile to Thr at position 706 is deleterious.
+3. Protein damage: The PolyPhen score of 0.993 indicates that the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 3 tumor samples in COSMIC.",damaging,uncertain,False
+EGFR,NM_005228.5(EGFR):c.2126A>C (p.Glu709Ala),Uncertain significance,missense_variant,MODERATE,0.0,0.986,True,35,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Glu to Ala at position 709 is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.986, this variant is likely to be probably damaging to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with 35 observations recorded in COSMIC, suggesting potential involvement in cancer.",damaging,uncertain,False
+EGFR,NM_005228.5(EGFR):c.2127_2130delinsC (p.Glu709_Thr710delinsAsp),Uncertain significance,protein_altering_variant,MODERATE,,,True,21,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the consequence type is a protein_altering_variant with a MODERATE impact, it is likely that the change may have some effect on protein function.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign. However, the fact that it is a protein_altering_variant with a MODERATE impact suggests that it may have some level of impact on protein function.
+4. Cancer evidence: This variant has been observed in tumor samples, with 21 observations in COSMIC, suggesting that it may be associated with cancer.",uncertain,uncertain,True
+KRAS,NM_004985.5(KRAS):c.180T>A (p.Gly60=),Uncertain significance,splice_region_variant,LOW,,,True,16,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given the consequence type is a splice_region_variant with a LOW impact, it may not significantly alter the protein function.
+3. Protein damage: Both PolyPhen score and SIFT score are not available. Given the LOW impact level of the variant, it is possible that the variant may be benign, but without a score, we cannot make a definitive assessment.
+4. Cancer evidence: This variant has been observed in tumor samples, with 16 observations in COSMIC, suggesting a possible association with cancer.",uncertain,uncertain,True
+KRAS,NM_033360.4(KRAS):c.261del (p.Lys88fs),Uncertain significance,frameshift_variant,HIGH,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, but given the consequence type is a frameshift variant with a HIGH impact level, it is likely that the amino acid change is deleterious.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is a frameshift variant with a HIGH impact level, it is likely to cause significant protein damage, probably damaging the protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",uncertain,uncertain,True
+KRAS,NM_004985.5(KRAS):c.491G>A (p.Arg164Gln),Uncertain significance,missense_variant,MODIFIER,,,True,4,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly assess the deleterious or tolerated nature of the amino acid change.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 4 tumor samples in COSMIC, suggesting a potential association with cancer.",uncertain,uncertain,True
+KRAS,NM_004985.5(KRAS):c.528GAA[3] (p.Lys180dup),Uncertain significance,,,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot determine if the amino acid change is deleterious or tolerated based on this score. 
+3. Protein damage: The PolyPhen score is not available, so we cannot assess whether the variant is probably damaging, possibly damaging, or benign based on this score.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",uncertain,uncertain,True
+KRAS,NM_004985.5(KRAS):c.-178C>A,Uncertain significance,5_prime_UTR_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score is not available, so we cannot directly determine if the amino acid change is deleterious or tolerated. However, given that this is a 5_prime_UTR_variant, it may not directly affect the amino acid sequence.
+3. Protein damage: The PolyPhen score is not available, so we cannot determine if the variant is probably damaging, possibly damaging, or benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",uncertain,uncertain,True
+PTEN,NM_000314.8(PTEN):c.55G>A (p.Asp19Asn),Uncertain significance,missense_variant,MODERATE,0.02,0.822,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.02, the amino acid change is likely deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.822, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 2 tumor samples in COSMIC.",damaging,uncertain,False
+PTEN,NM_000314.8(PTEN):c.649G>A (p.Val217Ile),Uncertain significance,stop_gained,MODERATE,0.49,0.11,True,1,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.49, the amino acid change is likely tolerated, as a score above 0.05 is generally considered to be non-deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.11, the variant is likely benign, as a score below 0.15 is generally considered to be non-damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 1 tumor sample, suggesting potential involvement in cancer.",neutral,uncertain,False
+PTEN,NM_000314.8(PTEN):c.362C>G (p.Ala121Gly),Uncertain significance,missense_variant,MODERATE,0.0,0.969,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from alanine to glycine at position 121 is predicted to be deleterious.
+3. Protein damage: With a PolyPhen score of 0.969, this variant is likely to be probably damaging to the protein function.
+4. Cancer evidence: There is no evidence of this variant being observed in tumor samples, as indicated by the lack of a COSMIC match.",damaging,uncertain,False
+PTEN,NM_000314.8(PTEN):c.1026G>C (p.Lys342Asn),Uncertain significance,missense_variant,MODERATE,0.01,0.98,True,4,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change from Lys to Asn at position 342 is likely deleterious.
+3. Protein damage: With a PolyPhen score of 0.98, this variant is probably damaging to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 4 tumor samples in the COSMIC database.",damaging,uncertain,False
+PTEN,NM_000314.8(PTEN):c.380G>T (p.Gly127Val),Uncertain significance,missense_variant,MODERATE,0.0,1.0,True,11,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 1.0, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 11 tumor samples.",damaging,uncertain,False
