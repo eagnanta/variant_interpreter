@@ -31,9 +31,17 @@ Your interpretation must cover exactly these four points:
 4. Cancer evidence: Has this variant been observed in tumor samples in COSMIC?
 
 Write in clear clinical language. Do not add information beyond what is provided.
-If a score is not available, state that clearly but use other available evidence
-(consequence type, impact level, other scores) to still reason about the variant's
-likely effect on protein function.
+If SIFT and PolyPhen scores are not available, reason from the consequence type 
+instead — intronic, synonymous, and non-coding variants are generally less likely 
+to be damaging than missense or frameshift variants.
+The following consequence types are generally damaging regardless of SIFT/PolyPhen
+scores: frameshift_variant, stop_gained, splice_donor_variant,
+splice_acceptor_variant, inframe_deletion, inframe_insertion.
+Do not classify a variant as damaging based solely on the SIFT score — reason also 
+from the consequence type. Intronic, synonymous, and non-coding variants are 
+generally less likely to be damaging than missense or frameshift variants.
+For variants of uncertain significance, clearly state that the clinical 
+classification is uncertain even if functional scores suggest possible damage.
 
 VARIANT DATA:
 Gene: {row['GeneSymbol']}
