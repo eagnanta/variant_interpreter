@@ -19,6 +19,7 @@ print(f"Gene: {test_variant['GeneSymbol']}")
 print(f"Variant: {test_variant['Name']}")
 print(f"Significance: {test_variant['significance_clean']}")
 print(f"Consequence: {test_variant['consequence']}")
+print(f"Impact: {test_variant['impact']}")
 print(f"SIFT: {test_variant['sift_score']}")
 print(f"PolyPhen: {test_variant['polyphen_score']}")
 print(f"COSMIC match: {test_variant['cosmic_match']}")
@@ -41,7 +42,9 @@ Your interpretation must cover exactly these four points:
 4. Cancer evidence: Has this variant been observed in tumor samples in COSMIC?
 
 Write in clear clinical language. Do not add information beyond what is provided.
-If a score is not available, state that clearly without making assumptions.
+If a score is not available, state that clearly but use other available evidence 
+(consequence type, impact level, other scores) to still reason about the variant's 
+likely effect on protein function.
 
 VARIANT DATA:
 Gene: {test_variant['GeneSymbol']}
