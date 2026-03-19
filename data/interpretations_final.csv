@@ -1,82 +1,477 @@
-GeneSymbol,Name,significance_clean,consequence,impact,sift_score,polyphen_score,cosmic_match,cosmic_count,llm_interpretation
-BRCA1,NM_007294.4(BRCA1):c.190T>G (p.Cys64Gly),Pathogenic,stop_lost,MODERATE,0.0,0.781,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99765, Requested 420. Please try again in 2m39.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,"BRCA1, 6-KB DUP, EX13",Pathogenic,copy_number_variation,HIGH,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99762, Requested 404. Please try again in 2m23.424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.116G>A (p.Cys39Tyr),Pathogenic,missense_variant,MODERATE,0.0,0.884,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99760, Requested 421. Please try again in 2m36.384s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.116G>T (p.Cys39Phe),Likely pathogenic,missense_variant,MODERATE,0.0,0.845,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99757, Requested 422. Please try again in 2m34.656s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.1175_1216del (p.Leu392_Asn406delinsHis),Pathogenic,inframe_deletion,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99755, Requested 424. Please try again in 2m34.656s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.134+5G>C,Likely pathogenic,splice_donor_5th_base_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99753, Requested 416. Please try again in 2m26.016s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.772G>A (p.Glu258Lys),Likely pathogenic,missense_variant,MODERATE,0.0,,True,107,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99750, Requested 453. Please try again in 2m55.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.733G>T (p.Gly245Cys),Pathogenic,missense_variant,MODERATE,0.0,,True,122,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99748, Requested 452. Please try again in 2m52.8s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.747G>T (p.Arg249Ser),Likely pathogenic,missense_variant,MODERATE,0.01,,True,253,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99746, Requested 451. Please try again in 2m50.208s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.469G>T (p.Val157Phe),Likely pathogenic,missense_variant,MODERATE,0.0,,True,282,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99743, Requested 452. Please try again in 2m48.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr),Likely pathogenic,missense_variant,MODERATE,0.0,,True,99,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99741, Requested 453. Please try again in 2m47.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2155G>T (p.Gly719Cys),Pathogenic,missense_variant,MODERATE,0.0,1.0,True,76,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99739, Requested 455. Please try again in 2m47.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2127_2129del (p.Glu709_Thr710delinsAsp),Pathogenic,inframe_deletion,MODERATE,,,True,21,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99736, Requested 459. Please try again in 2m48.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2156G>C (p.Gly719Ala),Pathogenic,missense_variant,MODERATE,0.0,0.995,True,135,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99734, Requested 455. Please try again in 2m43.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2303G>T (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99731, Requested 455. Please try again in 2m40.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2303_2304delinsTT (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99729, Requested 459. Please try again in 2m42.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.34G>C (p.Gly12Arg),Likely pathogenic,missense_variant,MODERATE,0.01,,True,643,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99727, Requested 452. Please try again in 2m34.656s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.38G>A (p.Gly13Asp),Pathogenic,missense_variant,MODERATE,0.04,,True,1310,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99724, Requested 453. Please try again in 2m32.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.175G>A (p.Ala59Thr),Pathogenic,missense_variant,MODERATE,0.03,,True,39,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99722, Requested 451. Please try again in 2m29.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.35G>A (p.Gly12Asp),Likely pathogenic,missense_variant,MODERATE,0.04,,True,2527,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99720, Requested 454. Please try again in 2m30.336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.35G>T (p.Gly12Val),Pathogenic,missense_variant,MODERATE,0.0,,True,2122,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99717, Requested 452. Please try again in 2m26.016s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.386G>A (p.Gly129Glu),Likely pathogenic,missense_variant,MODERATE,0.0,1.0,True,16,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99715, Requested 455. Please try again in 2m26.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.697C>T (p.Arg233Ter),Likely pathogenic,stop_gained,HIGH,,,True,150,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99713, Requested 447. Please try again in 2m18.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.347_351del (p.Asp116fs),Pathogenic,frameshift_variant,HIGH,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99710, Requested 413. Please try again in 1m46.271999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.388C>T (p.Arg130Ter),Pathogenic,stop_gained,HIGH,,,True,125,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99708, Requested 446. Please try again in 2m13.055999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.253+1G>A,Pathogenic,splice_donor_variant,HIGH,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99705, Requested 409. Please try again in 1m38.496s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.2207A>C (p.Glu736Ala),Likely benign,missense_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99703, Requested 417. Please try again in 1m43.68s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4036G>A (p.Glu1346Lys),Likely benign,missense_variant,MODIFIER,,,True,2,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99701, Requested 435. Please try again in 1m57.504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4676-7C>T,Likely benign,splice_region_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99698, Requested 411. Please try again in 1m34.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4837A>T (p.Ser1613Cys),Likely benign,missense_variant,MODERATE,0.02,0.848,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99696, Requested 423. Please try again in 1m42.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.5152+10A>G,Likely benign,intron_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99694, Requested 412. Please try again in 1m31.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.639A>G (p.Arg213=),Benign,synonymous_variant,LOW,,,True,17,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99691, Requested 445. Please try again in 1m57.504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.993+12T>C,Likely benign,intron_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99689, Requested 409. Please try again in 1m24.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.108G>A (p.Pro36=),Benign,missense_variant,LOW,,,True,7,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99686, Requested 440. Please try again in 1m48.864s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.885T>C (p.Pro295=),Likely benign,synonymous_variant,LOW,,,True,3,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99684, Requested 433. Please try again in 1m41.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.666G>T (p.Pro222=),Likely benign,synonymous_variant,LOW,,,True,6,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99682, Requested 445. Please try again in 1m49.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2166G>A (p.Ala722=),Likely benign,synonymous_variant,LOW,,,True,2,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99679, Requested 418. Please try again in 1m23.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2232C>T (p.Ile744=),Likely benign,synonymous_variant,LOW,,,True,1,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99677, Requested 423. Please try again in 1m26.4s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2280C>T (p.Leu760=),Likely benign,synonymous_variant,LOW,,,True,1,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99675, Requested 423. Please try again in 1m24.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2289C>G (p.Ala763=),Likely benign,synonymous_variant,LOW,,,True,2,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99672, Requested 429. Please try again in 1m27.264s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2329C>T (p.Leu777=),Likely benign,synonymous_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99670, Requested 412. Please try again in 1m10.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.290+74T>G,Benign,intron_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99668, Requested 409. Please try again in 1m6.527999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.290+97A>C,Benign,intron_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99665, Requested 409. Please try again in 1m3.936s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.290+97A>T,Benign,intron_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99663, Requested 409. Please try again in 1m2.208s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.450+40A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99660, Requested 414. Please try again in 1m3.936s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.450+92A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99658, Requested 414. Please try again in 1m2.208s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+GeneSymbol,Name,significance_clean,consequence,impact,sift_score,polyphen_score,cosmic_match,cosmic_count,llm_interpretation,confidence,confidence_reasons
+BRCA1,NM_007294.4(BRCA1):c.190T>G (p.Cys64Gly),Pathogenic,stop_lost,MODERATE,0.0,0.781,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.781, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,"BRCA1, 6-KB DUP, EX13",Pathogenic,copy_number_variation,HIGH,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Since the SIFT score is not available and the consequence type is a copy_number_variation, we cannot directly assess the amino acid change. However, given the high impact of the variation, it is likely to have a significant effect on the gene function.
+3. Protein damage: The PolyPhen score is not available, but the consequence type is a copy_number_variation, which can lead to significant alterations in gene expression and function, potentially causing protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting that it may not be a commonly reported cancer-associated mutation.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: copy_number_variation
+BRCA1,NM_007294.4(BRCA1):c.116G>A (p.Cys39Tyr),Pathogenic,missense_variant,MODERATE,0.0,0.884,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.884, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",MEDIUM,SIFT deleterious; PolyPhen probably damaging; No COSMIC match
+BRCA1,NM_007294.4(BRCA1):c.116G>T (p.Cys39Phe),Likely pathogenic,missense_variant,MODERATE,0.0,0.845,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.845, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,NM_007294.4(BRCA1):c.1175_1216del (p.Leu392_Asn406delinsHis),Pathogenic,inframe_deletion,MODIFIER,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Since the SIFT score is not available and the consequence type is an inframe_deletion, which is generally considered damaging, the amino acid change is likely deleterious.
+3. Protein damage: Given the consequence type is an inframe_deletion, which is generally damaging, the variant is likely to cause protein damage, even though the PolyPhen score is not available.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: inframe_deletion
+BRCA1,NM_007294.4(BRCA1):c.134+5G>C,Likely pathogenic,splice_donor_5th_base_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type. As a splice_donor_5th_base_variant, this variant is likely to have a significant impact on gene function, suggesting a deleterious effect.
+3. Protein damage: Given the consequence type of splice_donor_5th_base_variant, this variant is likely to cause protein damage, even in the absence of a PolyPhen score.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: splice_donor_5th_base_variant
+TP53,NM_000546.6(TP53):c.772G>A (p.Glu258Lys),Likely pathogenic,missense_variant,MODERATE,0.0,,True,107,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense_variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage, although the PolyPhen score is not available to further quantify this.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 107 tumor samples.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.733G>T (p.Gly245Cys),Pathogenic,missense_variant,MODERATE,0.0,,True,122,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 122 tumor samples in COSMIC.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.747G>T (p.Arg249Ser),Likely pathogenic,missense_variant,MODERATE,0.01,,True,253,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score suggests deleterious impact, this variant is likely to cause protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence in 253 tumor samples in COSMIC, suggesting a potential role in cancer.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.469G>T (p.Val157Phe),Likely pathogenic,missense_variant,MODERATE,0.0,,True,282,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense_variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage, although the PolyPhen score is not available to further quantify this.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 282 tumor samples in COSMIC.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr),Likely pathogenic,missense_variant,MODERATE,0.0,,True,99,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage, although the PolyPhen score is not available to further quantify this.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence in 99 tumor samples in COSMIC, suggesting a potential role in cancer.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2155G>T (p.Gly719Cys),Pathogenic,missense_variant,MODERATE,0.0,1.0,True,76,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 1.0, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 76 tumor samples.",HIGH,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2127_2129del (p.Glu709_Thr710delinsAsp),Pathogenic,inframe_deletion,MODERATE,,,True,21,"Here is the clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Given the consequence type is an inframe_deletion, this variant is likely to have a functional impact, although the SIFT score is not available to confirm the degree of deleteriousness.
+3. Protein damage: The consequence type of inframe_deletion suggests that the variant may cause protein damage, but without a PolyPhen score, the extent of the damage cannot be determined.
+4. Cancer evidence: This variant has been observed in tumor samples, with 21 observations in COSMIC, suggesting a potential association with cancer.",HIGH,SIFT missing; PolyPhen missing; COSMIC match found; Damaging consequence: inframe_deletion
+EGFR,NM_005228.5(EGFR):c.2156G>C (p.Gly719Ala),Pathogenic,missense_variant,MODERATE,0.0,0.995,True,135,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.995, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in 135 tumor samples in COSMIC, indicating its presence in cancer tissues.",HIGH,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2303G>T (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Ser to Ile at position 768 is predicted to be deleterious.
+3. Protein damage: The PolyPhen score of 0.998 suggests that this variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 120 tumor samples in the COSMIC database.",HIGH,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2303_2304delinsTT (p.Ser768Ile),Pathogenic,missense_variant,MODERATE,0.0,0.998,True,120,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Ser to Ile at position 768 is predicted to be deleterious.
+3. Protein damage: The PolyPhen score of 0.998 suggests that this variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 120 tumor samples in the COSMIC database.",HIGH,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.34G>C (p.Gly12Arg),Likely pathogenic,missense_variant,MODERATE,0.01,,True,643,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 643 tumor samples.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.38G>A (p.Gly13Asp),Pathogenic,missense_variant,MODERATE,0.04,,True,1310,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.04, the amino acid change is likely deleterious.
+3. Protein damage: Given the consequence type is a missense_variant and the SIFT score suggests deleterious impact, the variant is likely to cause protein damage, although the PolyPhen score is not available to further assess this.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence in 1310 tumor samples in COSMIC, suggesting a potential role in cancer.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+KRAS,NM_033360.4(KRAS):c.175G>A (p.Ala59Thr),Pathogenic,missense_variant,MODERATE,0.03,,True,39,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.03, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage, although the PolyPhen score is not available to further quantify this.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 39 tumor samples in COSMIC.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.35G>A (p.Gly12Asp),Likely pathogenic,missense_variant,MODERATE,0.04,,True,2527,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.04, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score suggests deleterious impact, this variant is likely to cause protein damage.
+4. Cancer evidence: This variant has been observed in 2527 tumor samples in COSMIC, indicating its presence in cancerous tissues.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.35G>T (p.Gly12Val),Pathogenic,missense_variant,MODERATE,0.0,,True,2122,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense_variant and the SIFT score indicates deleterious impact, this variant is likely to cause protein damage, even though the PolyPhen score is not available.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with evidence from 2122 tumor samples.",MEDIUM,SIFT deleterious; PolyPhen missing; COSMIC match found
+PTEN,NM_000314.8(PTEN):c.386G>A (p.Gly129Glu),Likely pathogenic,missense_variant,MODERATE,0.0,1.0,True,16,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely pathogenic.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Gly to Glu at position 129 is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 1.0, this variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with 16 observations in COSMIC, suggesting a potential association with cancer.",HIGH,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+PTEN,NM_000314.8(PTEN):c.697C>T (p.Arg233Ter),Likely pathogenic,stop_gained,HIGH,,,True,150,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is ""Likely pathogenic"".
+2. Functional impact: Given the consequence type is a stop_gained variant, which is generally damaging, the amino acid change is likely to be deleterious.
+3. Protein damage: As this is a stop_gained variant, it is expected to result in significant protein damage, leading to a loss of function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 150 tumor samples in COSMIC, suggesting a potential role in oncogenesis.",HIGH,SIFT missing; PolyPhen missing; COSMIC match found; Damaging consequence: stop_gained
+PTEN,NM_000314.8(PTEN):c.347_351del (p.Asp116fs),Pathogenic,frameshift_variant,HIGH,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Given the consequence type is a frameshift variant, the amino acid change is likely deleterious, as frameshift variants typically disrupt protein function.
+3. Protein damage: The variant is expected to cause significant protein damage, as frameshift variants are generally damaging, regardless of SIFT or PolyPhen scores.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, as no COSMIC match was found.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: frameshift_variant
+PTEN,NM_000314.8(PTEN):c.388C>T (p.Arg130Ter),Pathogenic,stop_gained,HIGH,,,True,125,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Given the consequence type is a stop_gained variant, which is generally damaging, the amino acid change is likely deleterious.
+3. Protein damage: The consequence type of stop_gained suggests that the variant is likely to cause significant protein damage, leading to a loss of function.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 125 tumor samples in COSMIC, supporting its potential role in cancer.",HIGH,SIFT missing; PolyPhen missing; COSMIC match found; Damaging consequence: stop_gained
+PTEN,NM_000314.8(PTEN):c.253+1G>A,Pathogenic,splice_donor_variant,HIGH,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Pathogenic.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type. As a splice_donor_variant, this variant is likely to have a significant impact on the gene's function, suggesting a deleterious effect.
+3. Protein damage: Given the consequence type of splice_donor_variant, which is generally damaging, and the lack of PolyPhen score, we infer that this variant is likely to cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, indicating no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: splice_donor_variant
+BRCA1,NM_007294.4(BRCA1):c.2207A>C (p.Glu736Ala),Likely benign,missense_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type, which is a missense_variant. However, without a SIFT score, we cannot determine if the amino acid change is deleterious or tolerated based on this score alone.
+3. Protein damage: The PolyPhen score is not available, so we consider the consequence type. As a missense_variant, it has the potential to be damaging, but without a PolyPhen score, we cannot classify it as probably damaging, possibly damaging, or benign based on this score.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match
+BRCA1,NM_007294.4(BRCA1):c.4036G>A (p.Glu1346Lys),Likely benign,missense_variant,MODIFIER,,,True,2,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we cannot determine the functional impact based on this score. However, the variant is a missense variant, which may have some impact on protein function.
+3. Protein damage: The PolyPhen score is not available to assess the potential damage to the protein. Given the consequence type is a missense variant, it may have some effect, but the extent is unclear.
+4. Cancer evidence: This variant has been observed in tumor samples, with 2 observations in COSMIC, suggesting it may be present in some cancer cases.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found
+BRCA1,NM_007294.4(BRCA1):c.4676-7C>T,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since SIFT score is not available, we cannot determine the functional impact based on this score. However, given the consequence type is a splice_region_variant, it may have some impact on splicing, but without SIFT score, we cannot conclude it is deleterious or tolerated.
+3. Protein damage: Without a PolyPhen score, we cannot directly assess the protein damage. However, considering the variant is a splice_region_variant, it may have some effect on protein function, but the extent of damage cannot be determined.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match
+BRCA1,NM_007294.4(BRCA1):c.4837A>T (p.Ser1613Cys),Likely benign,missense_variant,MODERATE,0.02,0.848,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Based on the SIFT score of 0.02, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.848, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.
+
+Note: Despite the SIFT and PolyPhen scores suggesting potential damage, the overall clinical classification is Likely benign, indicating that the clinical significance of this variant is uncertain and likely not pathogenic.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,NM_007294.4(BRCA1):c.5152+10A>G,Likely benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the consequence type is an intron_variant, which is generally less likely to be damaging, we cannot determine the functional impact.
+3. Protein damage: Similarly, without a PolyPhen score, we cannot assess the protein damage, but given the intron_variant consequence type, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+TP53,NM_000546.6(TP53):c.639A>G (p.Arg213=),Benign,synonymous_variant,LOW,,,True,17,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a synonymous_variant, it is likely to be tolerated as it does not change the amino acid sequence.
+3. Protein damage: Given the consequence type is synonymous_variant, the variant is likely to be benign, as it does not alter the amino acid sequence.
+4. Cancer evidence: This variant has been observed in 17 tumor samples in COSMIC, but its clinical significance is classified as Benign, suggesting that its presence in tumor samples may not be causally related to cancer.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+TP53,NM_000546.6(TP53):c.993+12T>C,Likely benign,intron_variant,MODIFIER,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the variant is an intron_variant, it is generally less likely to have a significant functional impact.
+3. Protein damage: Given the lack of PolyPhen score and the variant being an intron_variant, it is less likely to cause significant protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+TP53,NM_000546.6(TP53):c.108G>A (p.Pro36=),Benign,missense_variant,LOW,,,True,7,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available, we cannot determine the functional impact based on this score. However, given that the consequence is a missense variant, it is generally possible that the amino acid change could be deleterious, but without a SIFT score, we cannot confirm this.
+3. Protein damage: The PolyPhen score is not available, so we cannot assess the likelihood of protein damage based on this score. Given the missense consequence, there is a possibility of protein damage, but this cannot be confirmed without additional information.
+4. Cancer evidence: This variant has been observed in 7 tumor samples in COSMIC, indicating that it has been found in cancer tissues, but its role in cancer is not clear based on the provided information.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.885T>C (p.Pro295=),Likely benign,synonymous_variant,LOW,,,True,3,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a synonymous_variant, it is likely that the amino acid change is tolerated, as the change does not alter the amino acid sequence.
+3. Protein damage: Given the consequence type is synonymous_variant, the variant is likely benign, as it does not change the amino acid sequence and is therefore unlikely to cause protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 3 tumor samples.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+TP53,NM_000546.6(TP53):c.666G>T (p.Pro222=),Likely benign,synonymous_variant,LOW,,,True,6,"Here is the concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: As this is a synonymous variant, the amino acid change is tolerated, meaning there is no change to the protein sequence.
+3. Protein damage: Given the synonymous nature of this variant, it is likely benign, indicating no significant protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 6 samples.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+EGFR,NM_005228.5(EGFR):c.2166G>A (p.Ala722=),Likely benign,synonymous_variant,LOW,,,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the consequence type is synonymous_variant, the amino acid change is likely tolerated as it does not change the amino acid sequence.
+3. Protein damage: Given the consequence type is synonymous_variant, the variant is likely benign, suggesting no significant protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples, with 2 observations in COSMIC, although its clinical significance is still considered Likely benign.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+EGFR,NM_005228.5(EGFR):c.2232C>T (p.Ile744=),Likely benign,synonymous_variant,LOW,,,True,1,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the consequence type is a synonymous variant, the amino acid change is likely tolerated as it does not change the amino acid sequence.
+3. Protein damage: Given the consequence type is a synonymous variant, the variant is likely benign, as it does not alter the protein sequence.
+4. Cancer evidence: This variant has been observed in 1 tumor sample in COSMIC, but its clinical significance remains Likely benign, indicating that its presence in a tumor sample does not necessarily imply a causal role in cancer.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+EGFR,NM_005228.5(EGFR):c.2280C>T (p.Leu760=),Likely benign,synonymous_variant,LOW,,,True,1,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the consequence is a synonymous variant, the amino acid change is likely tolerated as it does not alter the amino acid sequence.
+3. Protein damage: Given the consequence is a synonymous variant, which is generally less likely to be damaging, the variant is likely benign.
+4. Cancer evidence: This variant has been observed in 1 tumor sample in COSMIC, but given its Likely benign classification and synonymous nature, its presence in a tumor sample does not necessarily imply a causal role in cancer.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+EGFR,NM_005228.5(EGFR):c.2289C>G (p.Ala763=),Likely benign,synonymous_variant,LOW,,,True,2,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a synonymous_variant, it is likely that the amino acid change is tolerated, as the codon change does not alter the amino acid sequence.
+3. Protein damage: Given the consequence type is synonymous_variant, the variant is likely benign, as it does not change the amino acid sequence and is therefore unlikely to cause protein damage.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 2 tumor samples.",MEDIUM,SIFT missing; PolyPhen missing; COSMIC match found; Benign consequence: synonymous_variant
+EGFR,NM_005228.5(EGFR):c.2329C>T (p.Leu777=),Likely benign,synonymous_variant,LOW,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a synonymous variant, it is likely that the amino acid change is tolerated, as the change does not alter the amino acid sequence.
+3. Protein damage: Given the variant is a synonymous variant, it is likely to be benign, as it does not change the amino acid sequence and therefore is unlikely to cause protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: synonymous_variant
+KRAS,NM_033360.4(KRAS):c.290+74T>G,Benign,intron_variant,MODIFIER,,,False,0,"Here is the clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is an intron_variant, it is generally less likely to be deleterious.
+3. Protein damage: Given the variant is an intron_variant and PolyPhen score is not available, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+KRAS,NM_033360.4(KRAS):c.290+97A>C,Benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is an intron_variant, it is generally less likely to be deleterious.
+3. Protein damage: Given the variant is an intron_variant, it is likely to be benign, as intronic variants are generally less likely to cause protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+KRAS,NM_033360.4(KRAS):c.290+97A>T,Benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is an intron_variant, it is generally less likely to be damaging.
+3. Protein damage: Given the variant is an intron_variant, it is likely to be benign, as intronic variants typically do not directly damage protein function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+KRAS,NM_033360.4(KRAS):c.450+40A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a non-coding transcript exon variant, it is likely to be tolerated.
+3. Protein damage: Given the consequence type is non_coding_transcript_exon_variant, this variant is likely to be benign, as it does not directly affect the protein sequence.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: non_coding_transcript_exon_variant
+KRAS,NM_033360.4(KRAS):c.450+92A>G,Benign,non_coding_transcript_exon_variant,MODIFIER,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Benign.
+2. Functional impact: Since the SIFT score is not available and the variant is a non-coding transcript exon variant, it is generally less likely to have a significant functional impact.
+3. Protein damage: Given the variant is a non-coding transcript exon variant, it is less likely to cause protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: non_coding_transcript_exon_variant
 PTEN,NM_000314.8(PTEN):c.802-18C>T,Likely benign,intron_variant,MODIFIER,,,False,0,"Here is a concise clinical interpretation of this variant:
 
 1. Classification: The ClinVar clinical significance of this variant is Likely benign.
-2. Functional impact: Since the SIFT score is not available and the variant is an intron_variant, it is generally less likely to be deleterious.
-3. Protein damage: Given the variant is an intron_variant, it is less likely to cause protein damage.
-4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC."
-PTEN,NM_000314.8(PTEN):c.802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99998, Requested 407. Please try again in 5m49.919999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.802-4_802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99996, Requested 411. Please try again in 5m51.647999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.802-4_802-3del,Likely benign,splice_region_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99993, Requested 411. Please try again in 5m49.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.4(PTEN):c.-1060C>G,Likely benign,upstream_gene_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99991, Requested 408. Please try again in 5m44.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4219C>G (p.Leu1407Val),Uncertain significance,missense_variant,MODERATE,0.0,0.578,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99989, Requested 423. Please try again in 5m55.968s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4402A>G (p.Asn1468Asp),Uncertain significance,missense_variant,MODERATE,0.03,0.497,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99986, Requested 424. Please try again in 5m54.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4456A>T (p.Ser1486Cys),Uncertain significance,missense_variant,MODERATE,0.0,0.848,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99984, Requested 424. Please try again in 5m52.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4807_4821del (p.Pro1603_Val1607del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99982, Requested 424. Please try again in 5m50.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-BRCA1,NM_007294.4(BRCA1):c.4414C>T (p.Leu1472Phe),Uncertain significance,missense_variant,MODERATE,0.3,0.684,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99979, Requested 424. Please try again in 5m48.191999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.875A>T (p.Lys292Ile),Uncertain significance,missense_variant,MODERATE,0.05,,True,1,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99977, Requested 429. Please try again in 5m50.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.718_741del (p.Ser240_Asn247del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99974, Requested 420. Please try again in 5m40.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.1051A>G (p.Lys351Glu),Uncertain significance,missense_variant,MODERATE,0.08,,True,5,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99972, Requested 448. Please try again in 6m2.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.400T>C (p.Phe134Leu),Uncertain significance,missense_variant,MODERATE,0.0,,True,70,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99970, Requested 453. Please try again in 6m5.472s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-TP53,NM_000546.6(TP53):c.-29+4A>C,Uncertain significance,splice_donor_region_variant,LOW,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99967, Requested 411. Please try again in 5m26.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2155G>A (p.Gly719Ser),Uncertain significance,missense_variant,MODERATE,0.0,0.999,True,104,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99965, Requested 455. Please try again in 6m2.88s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2065G>C (p.Val689Leu),Uncertain significance,missense_variant,MODERATE,0.0,0.612,True,3,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99963, Requested 443. Please try again in 5m50.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2117T>C (p.Ile706Thr),Uncertain significance,missense_variant,MODERATE,0.0,0.993,True,3,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99960, Requested 443. Please try again in 5m48.191999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2126A>C (p.Glu709Ala),Uncertain significance,missense_variant,MODERATE,0.0,0.986,True,35,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99958, Requested 456. Please try again in 5m57.696s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-EGFR,NM_005228.5(EGFR):c.2127_2130delinsC (p.Glu709_Thr710delinsAsp),Uncertain significance,protein_altering_variant,MODERATE,,,True,21,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99955, Requested 462. Please try again in 6m0.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.180T>A (p.Gly60=),Uncertain significance,splice_region_variant,LOW,,,True,16,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99953, Requested 448. Please try again in 5m46.464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_033360.4(KRAS):c.261del (p.Lys88fs),Uncertain significance,frameshift_variant,HIGH,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99951, Requested 412. Please try again in 5m13.632s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.491G>A (p.Arg164Gln),Uncertain significance,missense_variant,MODIFIER,,,True,4,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99948, Requested 431. Please try again in 5m27.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.528GAA[3] (p.Lys180dup),Uncertain significance,inframe_insertion,MODERATE,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99946, Requested 419. Please try again in 5m15.36s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-KRAS,NM_004985.5(KRAS):c.-178C>A,Uncertain significance,5_prime_UTR_variant,MODIFIER,,,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99944, Requested 411. Please try again in 5m6.72s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.55G>A (p.Asp19Asn),Uncertain significance,missense_variant,MODERATE,0.02,0.822,True,2,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99941, Requested 437. Please try again in 5m26.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.649G>A (p.Val217Ile),Uncertain significance,stop_gained,MODERATE,0.49,0.11,True,1,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 430. Please try again in 5m18.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.362C>G (p.Ala121Gly),Uncertain significance,missense_variant,MODERATE,0.0,0.969,False,0,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 420. Please try again in 5m8.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.1026G>C (p.Lys342Asn),Uncertain significance,missense_variant,MODERATE,0.01,0.98,True,4,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 438. Please try again in 5m21.408s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
-PTEN,NM_000314.8(PTEN):c.380G>T (p.Gly127Val),Uncertain significance,missense_variant,MODERATE,0.0,1.0,True,11,"ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01km0k0jznesv9f29y9gpr3v9b` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 454. Please try again in 5m33.504s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+2. Functional impact: Since the SIFT score is not available and the consequence type is an intron_variant, which is generally less likely to be damaging, we cannot determine the functional impact with certainty.
+3. Protein damage: Similarly, without a PolyPhen score and given the intron_variant consequence type, we cannot assess the likelihood of protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: intron_variant
+PTEN,NM_000314.8(PTEN):c.802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type, which is a splice_region_variant. This type of variant can potentially affect splicing, but without a SIFT score, we cannot determine if the amino acid change is deleterious or tolerated.
+3. Protein damage: With no PolyPhen score available, we rely on the consequence type. As a splice_region_variant, this variant may have some impact on protein function, but it is not as clearly damaging as frameshift or stop_gained variants.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match
+PTEN,NM_000314.8(PTEN):c.802-4_802-3dup,Likely benign,splice_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we cannot directly assess the functional impact. However, given the consequence type is a splice_region_variant, it may have some effect on splicing, but the impact is classified as LOW.
+3. Protein damage: Without a PolyPhen score, we cannot directly assess the protein damage. Considering the variant is a splice_region_variant, it could potentially affect splicing, but the overall impact is considered LOW.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match
+PTEN,NM_000314.8(PTEN):c.802-4_802-3del,Likely benign,splice_region_variant,LOW,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type, which is a splice_region_variant. This type of variant can potentially affect splicing, but without a SIFT score, we cannot determine if the amino acid change is deleterious or tolerated.
+3. Protein damage: Similarly, without a PolyPhen score, we rely on the consequence type. Splice_region_variant can be potentially damaging, but the clinical significance is classified as Likely benign, suggesting that it is probably benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, which suggests that it may not be associated with cancer. 
+
+Overall, the clinical classification of this variant is Likely benign, and its potential impact on protein function is uncertain due to the lack of SIFT and PolyPhen scores. However, given its classification and the absence of COSMIC evidence, it is likely that this variant does not have a significant clinical impact.",MEDIUM,SIFT missing; PolyPhen missing; No COSMIC match
+PTEN,NM_000314.4(PTEN):c.-1060C>G,Likely benign,upstream_gene_variant,MODIFIER,,,False,0,"Here is the concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Likely benign.
+2. Functional impact: Since the SIFT score is not available and the variant is an upstream_gene_variant, it is generally less likely to have a significant functional impact.
+3. Protein damage: Given the variant is an upstream_gene_variant, it is less likely to cause protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",HIGH,SIFT missing; PolyPhen missing; No COSMIC match; Benign consequence: upstream_gene_variant
+BRCA1,NM_007294.4(BRCA1):c.4219C>G (p.Leu1407Val),Uncertain significance,missense_variant,MODERATE,0.0,0.578,False,0,"Based on the provided evidence, here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score of 0.0 suggests that the amino acid change is deleterious.
+3. Protein damage: The PolyPhen score of 0.578 indicates that the variant is possibly damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.
+
+Note: Given the Uncertain significance classification, the clinical interpretation remains uncertain despite suggestive functional scores.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,NM_007294.4(BRCA1):c.4402A>G (p.Asn1468Asp),Uncertain significance,missense_variant,MODERATE,0.03,0.497,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: The SIFT score of 0.03 suggests that the amino acid change is deleterious.
+3. Protein damage: The PolyPhen score of 0.497 indicates that the variant is possibly damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.
+
+Note: Given the Uncertain significance classification, the clinical interpretation is uncertain, despite the SIFT and PolyPhen scores suggesting possible damage, as the variant is a missense variant which can be potentially damaging.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,NM_007294.4(BRCA1):c.4456A>T (p.Ser1486Cys),Uncertain significance,missense_variant,MODERATE,0.0,0.848,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.848, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.
+
+Note: Despite the suggestive functional scores, the clinical classification of this variant remains Uncertain significance.",LOW,SIFT deleterious; PolyPhen borderline; No COSMIC match; SIFT/PolyPhen disagree
+BRCA1,NM_007294.4(BRCA1):c.4807_4821del (p.Pro1603_Val1607del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available and the consequence type is an inframe_deletion, we cannot determine the functional impact based on the score. However, given the consequence type, this variant may have a significant impact on the protein function.
+3. Protein damage: Without a PolyPhen score, we rely on the consequence type. The inframe_deletion is generally considered damaging, as it can alter the protein structure and function.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer. 
+
+Given the uncertain clinical significance and the potential damaging effect of the inframe_deletion, the clinical classification of this variant remains uncertain.",LOW,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: inframe_deletion
+BRCA1,NM_007294.4(BRCA1):c.4414C>T (p.Leu1472Phe),Uncertain significance,missense_variant,MODERATE,0.3,0.684,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.3, the amino acid change is predicted to be tolerated.
+3. Protein damage: Based on the PolyPhen score of 0.684, the variant is possibly damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.
+
+Note: Given the Uncertain significance classification, the clinical interpretation of this variant remains uncertain, despite the possible damage suggested by the PolyPhen score, as the SIFT score indicates the change may be tolerated and the consequence type is a missense variant.",LOW,SIFT tolerated; PolyPhen borderline; No COSMIC match
+TP53,NM_000546.6(TP53):c.875A>T (p.Lys292Ile),Uncertain significance,missense_variant,MODERATE,0.05,,True,1,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.05, the amino acid change is likely deleterious.
+3. Protein damage: Given the consequence type is a missense_variant and the SIFT score suggests deleterious impact, this variant may be damaging, although the exact extent of damage cannot be determined without a PolyPhen score.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, specifically in 1 tumor sample.",LOW,SIFT tolerated; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.718_741del (p.Ser240_Asn247del),Uncertain significance,inframe_deletion,MODERATE,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Due to the lack of SIFT score, we cannot directly assess the functional impact. However, given that this is an inframe_deletion, it may have some impact on protein function.
+3. Protein damage: Without a PolyPhen score, we rely on the consequence type. As an inframe_deletion, this variant is likely to have some effect on the protein, but the extent of the damage is unclear.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer. 
+
+Overall, the clinical classification of this variant is uncertain, and its potential impact on the TP53 protein function is unclear. Further evaluation is needed to determine its clinical significance.",LOW,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: inframe_deletion
+TP53,NM_000546.6(TP53):c.1051A>G (p.Lys351Glu),Uncertain significance,missense_variant,MODERATE,0.08,,True,5,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.08, the amino acid change is likely deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score suggests deleterious impact, this variant may cause protein damage, although the exact extent is unclear without a PolyPhen score.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 5 tumor samples in COSMIC.",LOW,SIFT tolerated; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.400T>C (p.Phe134Leu),Uncertain significance,missense_variant,MODERATE,0.0,,True,70,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Phe to Leu at position 134 is predicted to be deleterious.
+3. Protein damage: Given the consequence type is a missense variant and the SIFT score suggests deleterious impact, this variant is likely to cause protein damage, although the exact extent is uncertain without a PolyPhen score.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 70 tumor samples in COSMIC, suggesting a potential association with cancer.",LOW,SIFT deleterious; PolyPhen missing; COSMIC match found
+TP53,NM_000546.6(TP53):c.-29+4A>C,Uncertain significance,splice_donor_region_variant,LOW,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available, we cannot directly assess the functional impact. However, given the consequence type is a splice_donor_region_variant, it is likely to have a significant impact on the gene's function.
+3. Protein damage: The PolyPhen score is not available, but considering the variant is a splice_donor_region_variant, it is likely to cause protein damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer. 
+
+Note: Given the uncertain clinical significance and the potentially damaging consequence type, the clinical classification of this variant remains uncertain.",LOW,SIFT missing; PolyPhen missing; No COSMIC match
+EGFR,NM_005228.5(EGFR):c.2155G>A (p.Gly719Ser),Uncertain significance,missense_variant,MODERATE,0.0,0.999,True,104,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.999, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples in COSMIC, with 104 observations reported.",LOW,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2065G>C (p.Val689Leu),Uncertain significance,missense_variant,MODERATE,0.0,0.612,True,3,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Valine to Leucine is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.612, the variant is possibly damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with 3 observations in COSMIC.",LOW,SIFT deleterious; PolyPhen borderline; COSMIC match found; SIFT/PolyPhen disagree
+EGFR,NM_005228.5(EGFR):c.2117T>C (p.Ile706Thr),Uncertain significance,missense_variant,MODERATE,0.0,0.993,True,3,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.993, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 3 tumor samples in COSMIC.",LOW,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2126A>C (p.Glu709Ala),Uncertain significance,missense_variant,MODERATE,0.0,0.986,True,35,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change from Glu to Ala at position 709 is predicted to be deleterious.
+3. Protein damage: The PolyPhen score of 0.986 suggests that this variant is probably damaging.
+4. Cancer evidence: This variant has been observed in 35 tumor samples in COSMIC, indicating potential involvement in cancer.",LOW,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+EGFR,NM_005228.5(EGFR):c.2127_2130delinsC (p.Glu709_Thr710delinsAsp),Uncertain significance,protein_altering_variant,MODERATE,,,True,21,"Here is the concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available, we cannot determine the functional impact based on this score. However, given that the consequence type is a protein_altering_variant, it is possible that the amino acid change may have some impact on protein function.
+3. Protein damage: Without a PolyPhen score, we cannot directly assess the likelihood of protein damage. Nevertheless, considering the variant is a protein_altering_variant, it may potentially cause some level of damage to the protein.
+4. Cancer evidence: This variant has been observed in 21 tumor samples in COSMIC, suggesting a possible association with cancer.",LOW,SIFT missing; PolyPhen missing; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.180T>A (p.Gly60=),Uncertain significance,splice_region_variant,LOW,,,True,16,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Due to the lack of SIFT score, we cannot determine the functional impact based on this score alone. However, considering the consequence type is a splice_region_variant, it may have some impact on the gene function.
+3. Protein damage: Without a PolyPhen score, we cannot directly assess the protein damage. Given the variant's consequence type as a splice_region_variant, it may potentially affect the splicing process, but the extent of the damage is unclear.
+4. Cancer evidence: This variant has been observed in 16 tumor samples in COSMIC, suggesting it may be associated with cancer. However, the clinical classification remains uncertain, and the presence of this variant in tumor samples does not necessarily imply a causal role in oncogenesis.",LOW,SIFT missing; PolyPhen missing; COSMIC match found
+KRAS,NM_033360.4(KRAS):c.261del (p.Lys88fs),Uncertain significance,frameshift_variant,HIGH,,,False,0,"Here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Given the consequence type is a frameshift variant, which is generally damaging, the amino acid change is likely to be deleterious, even though a SIFT score is not available.
+3. Protein damage: As this is a frameshift variant, it is likely to cause significant protein damage, but without a PolyPhen score, we cannot classify it as probably damaging, possibly damaging, or benign based on this score alone. However, the nature of the variant suggests it is likely to be damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer based on available COSMIC data.",LOW,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: frameshift_variant
+KRAS,NM_004985.5(KRAS):c.491G>A (p.Arg164Gln),Uncertain significance,missense_variant,MODIFIER,,,True,4,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available, we cannot determine the functional impact based on this score. However, given that the variant is a missense variant, it has the potential to be deleterious.
+3. Protein damage: Without a PolyPhen score, we cannot directly assess the likelihood of protein damage. Nevertheless, as a missense variant, it may potentially cause damage to the protein.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 4 tumor samples in COSMIC, suggesting a possible link to cancer.",LOW,SIFT missing; PolyPhen missing; COSMIC match found
+KRAS,NM_004985.5(KRAS):c.528GAA[3] (p.Lys180dup),Uncertain significance,inframe_insertion,MODERATE,,,False,0,"Based on the provided evidence, here is a concise clinical interpretation of this variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available, we consider the consequence type. The variant is an inframe insertion, which can potentially disrupt protein function, but the impact is moderate.
+3. Protein damage: Without a PolyPhen score, we rely on the consequence type. Inframe insertions can be damaging, but the moderate impact suggests a possible, though not certain, level of damage.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, indicating no known association with cancer. 
+
+Given the uncertain clinical significance and lack of functional score data, the clinical classification of this variant remains uncertain.",LOW,SIFT missing; PolyPhen missing; No COSMIC match; Damaging consequence: inframe_insertion
+KRAS,NM_004985.5(KRAS):c.-178C>A,Uncertain significance,5_prime_UTR_variant,MODIFIER,,,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Since the SIFT score is not available and the variant is a 5_prime_UTR_variant, we cannot determine the functional impact based on this score. However, 5_prime_UTR variants are generally less likely to be damaging.
+3. Protein damage: The PolyPhen score is not available, but given the consequence type is a 5_prime_UTR_variant, it is likely to be benign.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC, suggesting no known association with cancer.",LOW,SIFT missing; PolyPhen missing; No COSMIC match
+PTEN,NM_000314.8(PTEN):c.55G>A (p.Asp19Asn),Uncertain significance,missense_variant,MODERATE,0.02,0.822,True,2,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.02, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.822, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 2 tumor samples in COSMIC.",LOW,SIFT deleterious; PolyPhen borderline; COSMIC match found; SIFT/PolyPhen disagree
+PTEN,NM_000314.8(PTEN):c.649G>A (p.Val217Ile),Uncertain significance,stop_gained,MODERATE,0.49,0.11,True,1,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.49, the amino acid change is tolerated. However, given the consequence type is a stop_gained variant, which is generally damaging, this suggests the SIFT score may not accurately reflect the functional impact.
+3. Protein damage: Based on the PolyPhen score of 0.11, the variant is likely benign. However, considering the consequence type is stop_gained, which is generally damaging, this suggests the PolyPhen score may not accurately reflect the protein damage.
+4. Cancer evidence: This variant has been observed in 1 tumor sample in COSMIC, indicating potential involvement in cancer.",LOW,SIFT tolerated; PolyPhen benign; COSMIC match found; Damaging consequence: stop_gained
+PTEN,NM_000314.8(PTEN):c.362C>G (p.Ala121Gly),Uncertain significance,missense_variant,MODERATE,0.0,0.969,False,0,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.969, the variant is probably damaging.
+4. Cancer evidence: This variant has not been observed in tumor samples in COSMIC.",LOW,SIFT deleterious; PolyPhen probably damaging; No COSMIC match
+PTEN,NM_000314.8(PTEN):c.1026G>C (p.Lys342Asn),Uncertain significance,missense_variant,MODERATE,0.01,0.98,True,4,"Here is the clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.01, the amino acid change from Lys to Asn at position 342 is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 0.98, this variant is likely to be probably damaging.
+4. Cancer evidence: This variant has been observed in tumor samples, with evidence of its presence in 4 tumor samples in the COSMIC database.",LOW,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
+PTEN,NM_000314.8(PTEN):c.380G>T (p.Gly127Val),Uncertain significance,missense_variant,MODERATE,0.0,1.0,True,11,"Here is a concise clinical interpretation of the variant:
+
+1. Classification: The ClinVar clinical significance of this variant is Uncertain significance.
+2. Functional impact: Based on the SIFT score of 0.0, the amino acid change is predicted to be deleterious.
+3. Protein damage: Based on the PolyPhen score of 1.0, the variant is probably damaging.
+4. Cancer evidence: This variant has been observed in 11 tumor samples in COSMIC, suggesting potential involvement in cancer.",LOW,SIFT deleterious; PolyPhen probably damaging; COSMIC match found
