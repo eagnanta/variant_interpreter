@@ -121,6 +121,17 @@ variant_project/
 └── README.md
 ```
 
+## Data Requirements
+
+The `data/` directory is excluded from this repository. To reproduce the pipeline,
+download the following files and place them in a `data/` folder:
+
+| File | Source | Instructions |
+|---|---|---|
+| `variant_summary.txt.gz` | [ClinVar FTP](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/) | Direct download |
+| `Cosmic_MutantCensus_v103_GRCh37.tsv` | [COSMIC Downloads](https://cancer.sanger.ac.uk/cosmic/download) | Requires free registration |
+| `Cosmic_Classification_v103_GRCh37.tsv` | [COSMIC Downloads](https://cancer.sanger.ac.uk/cosmic/download) | Requires free registration |
+
 ---
 
 ## How to Run
