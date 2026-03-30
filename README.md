@@ -28,8 +28,7 @@ cross-referencing across multiple databases. This project demonstrates that LLMs
 can assist this process, by synthesizing structured evidence into readable 
 interpretations that clinicians can verify and act on.
 
-The tool is designed with **grounding** as a core principle: the LLM is 
-instructed to reason only from provided evidence, reducing hallucination and 
+The tool is designed instructing the LLM to reason only from provided evidence, reducing hallucination and 
 making outputs verifiable.
 
 ---
