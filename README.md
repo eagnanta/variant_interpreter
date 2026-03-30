@@ -100,25 +100,21 @@ Each interpretation is assigned a confidence level based on evidence agreement:
 
 ## Project Structure
 ```
-variant_project/
-├── data/
-│   ├── variants_clean.csv          # 150 ClinVar variants
-│   ├── variants_annotated.csv      # + Ensembl VEP annotation
-│   ├── variants_cosmic.csv         # + COSMIC integration
-│   ├── interpretations_final.csv   # + LLM interpretations + confidence
-│   └── evaluation_results.csv      # Evaluation against ClinVar
 ├── src/
-│   ├── build_dataset.py            # ClinVar dataset
-│   ├── clean_labels.py             # Label harmonization
+│   ├── build_dataset.py            # ClinVar dataset construction
+│   ├── cleaned_labels.py           # Label harmonization
 │   ├── annotate_variants.py        # Ensembl VEP annotation
 │   ├── integrate_cosmic.py         # COSMIC integration
+│   ├── add_tumor_types.py          # COSMIC phenotype to tumor type mapping
 │   ├── fix_missing_annotations.py  # Manual annotation fixes
 │   ├── run_llm_pipeline.py         # LLM interpretation pipeline
 │   ├── test_llm.py                 # Single variant test
+│   ├── repair_interpretations.py   # Rate limit error recovery
 │   ├── evaluation_llm.py           # Evaluation framework
 │   ├── confidence_score.py         # Confidence scoring
 │   └── app.py                      # Streamlit interface
-└── README.md
+├── data/			    # Not tracked, see data requirements section
+
 ```
 
 ## Data Requirements
