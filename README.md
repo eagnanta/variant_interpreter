@@ -16,7 +16,7 @@ interpretation by:
 
 1. Retrieving clinical significance from **ClinVar**
 2. Annotating functional impact using **Ensembl VEP** (SIFT, PolyPhen scores)
-3. Cross-referencing cancer observations in **COSMIC**
+3. Cross-referencing cancer observations in **COSMIC** (including automated mapping of Phenotype IDs to human-readable tumor types).
 4. Generating a plain-language clinical interpretation using **LLaMA 3.3 70B** 
    via the Groq API
 5. Assigning a **confidence score** based on evidence agreement
@@ -49,6 +49,9 @@ COSMIC integration
         ↓
 LLM interpretation
 (LLaMA 3.3 70B via Groq API)
+        ↓
+Error Repair Layer
+(LLaMA 3.1 8B for rate-limit recovery)
         ↓
 Confidence scoring
 (HIGH / MEDIUM / LOW)
@@ -125,6 +128,7 @@ variant_project/
 ### Requirements
 ```bash
 pip install pandas requests groq streamlit
+pip install pandas requests groq streamlit python-dotenv
 ```
 
 ### Environment setup
@@ -155,6 +159,9 @@ python src/confidence_score.py
 
 # Step 7: Evaluation
 python src/evaluation_llm.py
+
+# Step 8: Repair any Rate-Limit/Connection errors
+python src/repair_interpretations.py
 ```
 
 ### Launch the web interface
@@ -187,7 +194,7 @@ oncogenes, and DNA repair genes across multiple cancer types.
 
 - Dataset limited to 76 unique variants across 5 genes
 - Groq free tier: 100,000 tokens/day limit
-- COSMIC phenotype IDs not mapped to tumor type names
+- Add: API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
 - Benign non-coding variants underperform due to absent functional scores
 - COSMIC data requires non-commercial license for redistribution
 
@@ -196,7 +203,6 @@ oncogenes, and DNA repair genes across multiple cancer types.
 ## Future Work
 
 - Expand to 500+ variants across more cancer genes
-- Add tumor type mapping from COSMIC phenotype IDs
 - Implement RAG (Retrieval Augmented Generation) for literature evidence
 - Add ACMG classification logic
 - Compare against other LLM models
