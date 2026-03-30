@@ -4,9 +4,6 @@ A bioinformatics pipeline that integrates clinical and cancer genomics databases
 with a large language model to generate evidence-based clinical interpretations 
 of genomic variants automatically.
 
-Built as an independent research project during the 2nd semester of an MSc in 
-Applied Bioinformatics.
-
 ---
 
 ## What it does
@@ -201,7 +198,7 @@ oncogenes, and DNA repair genes across multiple cancer types.
 
 - Dataset limited to 76 unique variants across 5 genes
 - Groq free tier: 100,000 tokens/day limit
-- Add: API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
+- API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
 - Benign non-coding variants underperform due to absent functional scores
 - COSMIC data requires non-commercial license for redistribution
 
