@@ -130,7 +130,6 @@ download the following files and place them in a `data/` folder:
 
 ### Requirements
 ```bash
-pip install pandas requests groq streamlit
 pip install pandas requests groq streamlit python-dotenv
 ```
 
