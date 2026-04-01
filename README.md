@@ -108,6 +108,7 @@ Each interpretation is assigned a confidence level based on evidence agreement:
 │   ├── repair_interpretations.py   # Rate limit error recovery
 │   ├── evaluation_llm.py           # Evaluation framework
 │   ├── confidence_score.py         # Confidence scoring
+│   ├── repair_interpretations.py   # Rate-limit error recovery
 │   └── app.py                      # Streamlit interface
 ├── data/			    # Not tracked, see data requirements section
 
