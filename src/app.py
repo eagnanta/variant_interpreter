@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 import pandas as pd
 import os
@@ -217,6 +218,15 @@ with col1:
     st.markdown("**COSMIC Evidence**")
     if variant_data['cosmic_match']:
         st.success(f"✅ Found in **{int(variant_data['cosmic_count'])}** tumor samples")
+        
+        # New: Display Tumor Types if they exist
+        if 'tumor_types' in variant_data and pd.notna(variant_data['tumor_types']):
+            st.markdown(f"""
+            <div style="background-color: #1a2e2e; padding: 10px; border-radius: 5px; border-left: 3px solid #4db8b8; margin-top: 5px;">
+                <span style="font-size: 0.9rem !important; color: #a0b0b0 !important;">TUMOR TYPES:</span><br>
+                <span style="font-size: 1rem !important;">{variant_data['tumor_types']}</span>
+            </div>
+            """, unsafe_allow_html=True)
     else:
         st.info("No COSMIC match found")
 
@@ -224,13 +234,36 @@ with col2:
     st.subheader("LLM Clinical Interpretation")
 
     if pd.notna(variant_data['llm_interpretation']):
+        interp = variant_data['llm_interpretation']
+        interp = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', interp)
+        interp = interp.replace(chr(10), '<br>')
         st.markdown(f"""
         <div class="interpretation-box">
-            {variant_data['llm_interpretation'].replace(chr(10), '<br>')}
+            {interp}
         </div>
         """, unsafe_allow_html=True)
     else:
         st.info("No interpretation available for this variant")
+
+    # Confidence score badge
+    confidence = variant_data.get('confidence', None)
+    if confidence:
+        badge_map = {
+            "HIGH":   ("🟢", "#1a3a2a", "#4db8b8"),
+            "MEDIUM": ("🟡", "#2e2a1a", "#d4a84b"),
+            "LOW":    ("🔴", "#3a1a1a", "#d45b4b"),
+        }
+        emoji, bg, border = badge_map.get(confidence, ("⚪", "#243044", "#8aa0b8"))
+        st.markdown(f"""
+        <div style="background-color:{bg}; border:1px solid {border}; border-radius:10px;
+                    padding:16px 24px; margin:16px 0; text-align:center;">
+            <span style="font-size:0.95rem !important; color:#a0b0b0 !important;
+                         text-transform:uppercase; letter-spacing:1px;">Confidence Score</span><br>
+            <span style="font-size:2rem !important; font-weight:700; color:{border} !important;">
+                {emoji} {confidence}
+            </span>
+        </div>
+        """, unsafe_allow_html=True)
 
     result_df = pd.DataFrame([{
         "Gene": variant_data['GeneSymbol'],
@@ -242,6 +275,7 @@ with col2:
         "PolyPhen": variant_data['polyphen_score'],
         "COSMIC match": variant_data['cosmic_match'],
         "COSMIC count": variant_data['cosmic_count'],
+        "Tumor Types": variant_data.get('tumor_types', "N/A"), # Added this line
         "LLM Interpretation": variant_data['llm_interpretation']
     }])
 

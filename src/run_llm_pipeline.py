@@ -1,4 +1,3 @@
-
 import pandas as pd
 import os
 import time
@@ -10,7 +9,7 @@ client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 # Load enriched dataset
 df = pd.read_csv("data/variants_cosmic.csv")
 
-# Drop duplicates — same variant appears twice in our dataset
+# Drop duplicates
 df = df.drop_duplicates(subset=["Name", "GeneSymbol"]).reset_index(drop=True)
 print(f"Running LLM interpretation on {len(df)} unique variants...")
 
@@ -18,7 +17,12 @@ def build_prompt(row):
     """Build clinical interpretation prompt for a single variant."""
     sift = f"{row['sift_score']}" if pd.notna(row['sift_score']) else "not available"
     polyphen = f"{row['polyphen_score']}" if pd.notna(row['polyphen_score']) else "not available"
-    cosmic_info = f"Yes, observed in {row['cosmic_count']} tumor samples in COSMIC" if row['cosmic_match'] else "No COSMIC match found"
+    
+    if row['cosmic_match']:
+        tumor_types = row['tumor_types'] if pd.notna(row.get('tumor_types')) else "unknown tumor types"
+        cosmic_info = f"Yes, observed in {row['cosmic_count']} tumor samples. Tumor types: {tumor_types}"
+    else:
+        cosmic_info = "No COSMIC match found"
 
     return f"""You are a clinical genomics assistant. Based ONLY on the evidence provided below,
 write a concise clinical interpretation of this variant.
@@ -29,18 +33,22 @@ Your interpretation must cover exactly these four points:
 3. Protein damage: Based on the PolyPhen score, is the variant probably damaging,
    possibly damaging, or benign?
 4. Cancer evidence: Has this variant been observed in tumor samples in COSMIC?
+   If yes, name the specific tumor types where it has been observed.
 
 Write in clear clinical language. Do not add information beyond what is provided.
-If SIFT and PolyPhen scores are not available, reason from the consequence type 
-instead — intronic, synonymous, and non-coding variants are generally less likely 
+If SIFT and PolyPhen scores are not available, reason from the consequence type
+instead — intronic, synonymous, and non-coding variants are generally less likely
 to be damaging than missense or frameshift variants.
 The following consequence types are generally damaging regardless of SIFT/PolyPhen
 scores: frameshift_variant, stop_gained, splice_donor_variant,
-splice_acceptor_variant, inframe_deletion, inframe_insertion.
-Do not classify a variant as damaging based solely on the SIFT score — reason also 
-from the consequence type. Intronic, synonymous, and non-coding variants are 
-generally less likely to be damaging than missense or frameshift variants.
-For variants of uncertain significance, clearly state that the clinical 
+splice_acceptor_variant, splice_donor_5th_base_variant, inframe_deletion,
+inframe_insertion, copy_number_variation.
+The following consequence types are generally benign regardless of SIFT/PolyPhen
+scores: intron_variant, synonymous_variant, non_coding_transcript_exon_variant,
+upstream_gene_variant.
+Do not classify a variant as damaging based solely on the SIFT score — reason also
+from the consequence type.
+For variants of uncertain significance, clearly state that the clinical
 classification is uncertain even if functional scores suggest possible damage.
 
 VARIANT DATA:
@@ -83,6 +91,8 @@ for i, row in df.iterrows():
         "polyphen_score": row["polyphen_score"],
         "cosmic_match": row["cosmic_match"],
         "cosmic_count": row["cosmic_count"],
+        "tumor_types": row.get("tumor_types"),
+        "pubmed_pmids": row["pubmed_pmids"],
         "llm_interpretation": interpretation
     })
 
