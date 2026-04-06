@@ -4,9 +4,6 @@ A bioinformatics pipeline that integrates clinical and cancer genomics databases
 with a large language model to generate evidence-based clinical interpretations 
 of genomic variants automatically.
 
-Built as an independent research project during the 2nd semester of an MSc in 
-Applied Bioinformatics.
-
 ---
 
 ## What it does
@@ -31,8 +28,7 @@ cross-referencing across multiple databases. This project demonstrates that LLMs
 can assist this process, by synthesizing structured evidence into readable 
 interpretations that clinicians can verify and act on.
 
-The tool is designed with **grounding** as a core principle: the LLM is 
-instructed to reason only from provided evidence, reducing hallucination and 
+The tool is designed instructing the LLM to reason only from provided evidence, reducing hallucination and 
 making outputs verifiable.
 
 ---
@@ -112,8 +108,9 @@ Each interpretation is assigned a confidence level based on evidence agreement:
 │   ├── repair_interpretations.py   # Rate limit error recovery
 │   ├── evaluation_llm.py           # Evaluation framework
 │   ├── confidence_score.py         # Confidence scoring
+│   ├── repair_interpretations.py   # Rate-limit error recovery
 │   └── app.py                      # Streamlit interface
-├── data/			    # Not tracked, see data requirements section
+├── data/			                  # Not tracked, see data requirements section
 
 ```
 
@@ -134,7 +131,6 @@ download the following files and place them in a `data/` folder:
 
 ### Requirements
 ```bash
-pip install pandas requests groq streamlit
 pip install pandas requests groq streamlit python-dotenv
 ```
 
@@ -201,7 +197,7 @@ oncogenes, and DNA repair genes across multiple cancer types.
 
 - Dataset limited to 76 unique variants across 5 genes
 - Groq free tier: 100,000 tokens/day limit
-- Add: API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
+- API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
 - Benign non-coding variants underperform due to absent functional scores
 - COSMIC data requires non-commercial license for redistribution
 
@@ -234,3 +230,5 @@ oncogenes, and DNA repair genes across multiple cancer types.
 MSc Applied Bioinformatics student — Aristotle University of Thessaloniki (AUTH)
 
 *Built independently as a portfolio project, March 2026*
+
+Note: COSMIC data (CMC v103) is used under a non-commercial academic license. Users wishing to replicate this pipeline must obtain independent access from cancer.sanger.ac.uk.
