@@ -230,3 +230,5 @@ oncogenes, and DNA repair genes across multiple cancer types.
 MSc Applied Bioinformatics student — Aristotle University of Thessaloniki (AUTH)
 
 *Built independently as a portfolio project, March 2026*
+
+Note: COSMIC data (CMC v103) is used under a non-commercial academic license. Users wishing to replicate this pipeline must obtain independent access from cancer.sanger.ac.uk.
