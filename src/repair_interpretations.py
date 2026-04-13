@@ -41,33 +41,49 @@ def build_prompt(row):
 to_fix = df[df['llm_interpretation'].str.contains("ERROR|limit", na=True, case=False)].copy()
 
 if to_fix.empty:
-    print("✨ No errors found! All variants have valid interpretations.")
+    print(" No errors found! All variants have valid interpretations.")
     exit(0)
 
-print(f"🚀 Found {len(to_fix)} variants to repair. Starting recovery...")
+print(f" Found {len(to_fix)} variants to repair. Starting recovery...")
 
-# 4. Processing Loop
+# 4. Processing Loop with Exponential Backoff
 for i, row in to_fix.iterrows():
     print(f"[{i}] Repairing: {row['GeneSymbol']} - {row['Name'][:40]}...")
     
-    try:
-        prompt = build_prompt(row)
-        response = client.chat.completions.create(
-            model="llama-3.1-8b-instant",  # Lighter model to avoid 429 errors
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.3
-        )
-        interpretation = response.choices[0].message.content
-        df.at[i, 'llm_interpretation'] = interpretation
-        
-        # Save every row to prevent losing progress if it crashes
-        df.to_csv(data_path, index=False)
-        
-        # Brief pause to respect Rate Limits (Requests Per Minute)
-        time.sleep(1.5) 
-        
-    except Exception as e:
-        print(f"❌ Failed again at index {i}: {str(e)}")
-        continue
+    success = False
+    wait_time = 2.0  # Start with 2 seconds if a limit is hit
+    max_retries = 5
 
-print(f"\n✅ Repair process finished. Final results saved to {data_path}")
+    for attempt in range(max_retries):
+        try:
+            prompt = build_prompt(row)
+            response = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.3
+            )
+            interpretation = response.choices[0].message.content
+            df.at[i, 'llm_interpretation'] = interpretation
+            
+            # Save progress immediately after every success
+            df.to_csv(data_path, index=False)
+            success = True
+            
+            # Wait 1.5s between successful calls
+            time.sleep(1.5) 
+            break  
+            
+        except Exception as e:
+            # Check if the error message mentions "429", "limit", or "rate"
+            if any(word in str(e).lower() for word in ["429", "limit", "rate"]):
+                print(f"Rate limit hit at index {i}. Retrying in {wait_time}s... (Attempt {attempt+1}/{max_retries})")
+                time.sleep(wait_time)
+                wait_time *= 2  # Exponentially increase wait (2s -> 4s -> 8s -> 16s)
+            else:
+                print(f"Permanent error at index {i}: {str(e)}")
+                break 
+
+    if not success:
+        print(f"Skipping index {i} after {max_retries} failed attempts.")
+
+print(f"\n Repair process finished. Final results saved to {data_path}")

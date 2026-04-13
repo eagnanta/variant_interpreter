@@ -7,18 +7,46 @@ from groq import Groq
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # Load enriched dataset
-df = pd.read_csv("data/variants_cosmic.csv")
+df_raw = pd.read_csv("data/variants_cosmic.csv")
 
-# Drop duplicates
-df = df.drop_duplicates(subset=["Name", "GeneSymbol"]).reset_index(drop=True)
-print(f"Running LLM interpretation on {len(df)} unique variants...")
+# Define Clinical Merge rules
+aggregation_rules = {
+    'significance_clean': 'first',
+    'consequence': 'first',
+    'impact': 'first',
+    'sift_score': 'min',         # SIFT: lowest score is most deleterious
+    'polyphen_score': 'max',      # PolyPhen: highest score is most damaging
+    'cosmic_match': 'max',        # True if any entry matched COSMIC
+    'cosmic_count': 'sum',        # Total count across all duplicate entries
+    'tumor_types': lambda x: '; '.join(set(filter(None, x.dropna().astype(str)))), # Unique tumors list
+    'pubmed_pmids': 'first'
+}
+
+# Execute the Merge
+df = df_raw.groupby(['Name', 'GeneSymbol'], as_index=False).agg(aggregation_rules)
+
+# Load existing data into results
+processed_variants = set()
+results = []
+output_file = "data/interpretations_final.csv"
+
+if os.path.exists(output_file):
+    try:
+        existing_df = pd.read_csv(output_file)
+        processed_variants = set(existing_df['Name'].dropna().tolist())
+        # loads our old work into the list so it isn't lost
+        results = existing_df.to_dict('records') 
+        print(f"Resuming: {len(processed_variants)} variants already completed.")
+    except Exception as e:
+        print(f"Starting fresh: {e}")
 
 def build_prompt(row):
     """Build clinical interpretation prompt for a single variant."""
     sift = f"{row['sift_score']}" if pd.notna(row['sift_score']) else "not available"
     polyphen = f"{row['polyphen_score']}" if pd.notna(row['polyphen_score']) else "not available"
-    
+
     if row['cosmic_match']:
+        # Use the joined tumor_types from the merge
         tumor_types = row['tumor_types'] if pd.notna(row.get('tumor_types')) else "unknown tumor types"
         cosmic_info = f"Yes, observed in {row['cosmic_count']} tumor samples. Tumor types: {tumor_types}"
     else:
@@ -76,8 +104,9 @@ def interpret_variant(row):
         return f"ERROR: {str(e)}"
 
 # Run pipeline
-results = []
 for i, row in df.iterrows():
+    if row['Name'] in processed_variants:
+        continue
     print(f"[{i+1}/{len(df)}] {row['GeneSymbol']}: {row['Name'][:50]}")
 
     interpretation = interpret_variant(row)
@@ -96,13 +125,17 @@ for i, row in df.iterrows():
         "llm_interpretation": interpretation
     })
 
+
+    # Mark as processed
+    processed_variants.add(row['Name'])
+
     # Save progressively every 10 variants
     if (i + 1) % 10 == 0:
-        pd.DataFrame(results).to_csv("data/interpretations_partial.csv", index=False)
-        print(f"  → Saved progress ({i+1} variants done)")
+        pd.DataFrame(results).to_csv(output_file, index=False)
+        print(f"Saved progress ({len(results)} total variants now in file)")
 
     # Respect rate limit
-    time.sleep(2)
+    time.sleep(10)
 
 # Save final results
 final_df = pd.DataFrame(results)
