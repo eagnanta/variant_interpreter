@@ -1,8 +1,10 @@
 # LLM-Assisted Variant Interpreter
 
-A bioinformatics pipeline that integrates clinical and cancer genomics databases 
-with a large language model to generate evidence-based clinical interpretations 
+A bioinformatics pipeline that integrates clinical and cancer genomics databases
+with a large language model to generate evidence-based clinical interpretations
 of genomic variants automatically.
+Built as an independent MSc research project during the 2nd semester of an MSc in
+Applied Bioinformatics at the Aristotle University of Thessaloniki (AUTH).
 
 ---
 
@@ -22,32 +24,38 @@ interpretation by:
 
 ## Why it matters
 
-Interpreting genomic variants is one of the most time-consuming tasks in clinical 
-genomics. A single patient can carry thousands of variants, each requiring manual 
-cross-referencing across multiple databases. This project demonstrates that LLMs 
-can assist this process, by synthesizing structured evidence into readable 
+Interpreting genomic variants is one of the most time-consuming tasks in clinical
+genomics. A single patient can carry thousands of variants, each requiring manual
+cross-referencing across multiple databases. This project demonstrates that LLMs
+can assist this process by synthesising structured evidence into readable
 interpretations that clinicians can verify and act on.
-
-The tool is designed instructing the LLM to reason only from provided evidence, reducing hallucination and 
-making outputs verifiable.
+The tool is designed with grounding as a core principle: the LLM is instructed
+to reason only from the structured evidence provided by the upstream databases,
+reducing hallucination and making all outputs verifiable.
 
 ---
 
 ## Pipeline
 ```
-ClinVar (150 variants)
+ClinVar (variant dataset)
+        ↓
+Label harmonisation
+(Pathogenic / Likely pathogenic / Benign / Likely benign / VUS)
         ↓
 Ensembl VEP annotation
 (consequence, SIFT, PolyPhen)
         ↓
 COSMIC integration
-(tumor observations, somatic status)
+(tumor observations, somatic status, tumor type mapping)
+        ↓
+Deduplication & merging
+(min SIFT, max PolyPhen, unique tumor types)
         ↓
 LLM interpretation
-(LLaMA 3.3 70B via Groq API)
+(LLaMA 3.3 70B via Groq API — grounding-first prompt)
         ↓
-Error Repair Layer
-(LLaMA 3.1 8B for rate-limit recovery)
+Rate-limit repair layer
+(LLaMA 3.1 8B for recovery)
         ↓
 Confidence scoring
 (HIGH / MEDIUM / LOW)
@@ -57,13 +65,32 @@ Streamlit web interface
 
 ---
 
+## Why it matters
+
+Interpreting genomic variants is one of the most time-consuming tasks in clinical
+genomics. A single patient can carry thousands of variants, each requiring manual
+cross-referencing across multiple databases. This project demonstrates that LLMs
+can assist this process by synthesising structured evidence into readable
+interpretations that clinicians can verify and act on.
+
+The tool is designed with **grounding as a core principle**: the LLM is instructed
+to reason only from the structured evidence provided by the upstream databases,
+reducing hallucination and making all outputs verifiable.
+
+---
+
 ## Results
 
-The pipeline was evaluated by comparing LLM functional reasoning against 
-ClinVar ground truth labels across 76 unique variants.
+The pipeline was evaluated in two phases by comparing LLM functional reasoning
+against ClinVar ground truth labels.
+
+### Phase 1 — Proof of concept (5 genes, 76 variants)
+
+Initial evaluation on the five most well-studied cancer genes with clean
+annotation coverage:
 
 | Category | Agreement |
-|---|---|
+| --- | --- |
 | Overall | 75.0% |
 | Pathogenic | 100.0% |
 | Likely pathogenic | 100.0% |
@@ -71,14 +98,48 @@ ClinVar ground truth labels across 76 unique variants.
 | Benign | 28.6% |
 | Uncertain significance | 64.0% |
 
+### Phase 2 — Extended evaluation (10 genes, 593 variants)
+
+Evaluation on an expanded dataset including mismatch repair and additional
+tumour suppressor genes, representing a harder and more realistic benchmark:
+
+| Category | Agreement |
+| --- | --- |
+| Overall | 72.8% |
+| Pathogenic | 62.3% |
+| Likely pathogenic | 68.8% |
+| Likely benign | 92.8% |
+| Benign | 51.5% |
+| Uncertain significance | 68.3% |
+
+#### Agreement by gene
+
+| Gene | Agreement |
+| --- | --- |
+| PTEN | 86.2% |
+| TP53 | 80.0% |
+| KRAS | 80.0% |
+| APC | 79.7% |
+| STK11 | 73.3% |
+| EGFR | 71.7% |
+| PALB2 | 70.0% |
+| MLH1 | 69.0% |
+| BRCA1 | 65.0% |
+| MSH2 | 53.4% |
+
 **Key findings:**
-- The model achieves 100% agreement on Pathogenic and Likely Pathogenic variants
-- Benign non-coding variants are systematically underperforming due to absent 
-  SIFT/PolyPhen scores — an expected limitation of functional prediction tools
-- Variants of Uncertain Significance consistently receive LOW confidence scores, 
+
+- Likely Benign agreement improved substantially from Phase 1 (72.2% → 92.8%),
+  driven by improved consequence-type reasoning in the prompt
+- Benign agreement nearly doubled (28.6% → 51.5%) following improved handling
+  of non-coding variants where SIFT/PolyPhen scores are absent
+- All 199 Variants of Uncertain Significance received LOW confidence scores,
   correctly reflecting genuine clinical ambiguity
-- Disagreements cluster around missense VUS variants where functional evidence 
-  conflicts with clinical classification — a biologically meaningful finding
+- Well-annotated genes (PTEN, TP53, KRAS) consistently outperform mismatch
+  repair genes (MSH2, MLH1) where VEP annotation coverage is lower — a
+  biologically meaningful finding about annotation limitations in this gene class
+- Lower Pathogenic agreement in Phase 2 reflects appropriate LLM caution when
+  functional evidence is missing, not incorrect reasoning
 
 ---
 
@@ -87,69 +148,84 @@ ClinVar ground truth labels across 76 unique variants.
 Each interpretation is assigned a confidence level based on evidence agreement:
 
 | Level | Criteria |
-|---|---|
+| --- | --- |
 | HIGH | SIFT + PolyPhen + COSMIC + consequence all agree |
 | MEDIUM | Partial evidence agreement |
 | LOW | Missing scores, conflicting evidence, or VUS |
 
+**Confidence distribution (Phase 2, 593 variants):**
+
+| Confidence | Count |
+| --- | --- |
+| HIGH | 151 |
+| MEDIUM | 231 |
+| LOW | 211 |
+
 ---
 
 ## Project Structure
+
 ```
+variant_project/
 ├── src/
-│   ├── build_dataset.py            # ClinVar dataset construction
-│   ├── cleaned_labels.py           # Label harmonization
+│   ├── build_dataset.py            # ClinVar dataset construction (10 genes)
+│   ├── cleaned_labels.py           # Label harmonisation
 │   ├── annotate_variants.py        # Ensembl VEP annotation
-│   ├── integrate_cosmic.py         # COSMIC integration
-│   ├── add_tumor_types.py          # COSMIC phenotype to tumor type mapping
+│   ├── integrate_cosmic.py         # COSMIC integration with AA normalisation
+│   ├── add_tumor_types.py          # COSMIC phenotype → tumor type mapping
 │   ├── fix_missing_annotations.py  # Manual annotation fixes
 │   ├── run_llm_pipeline.py         # LLM interpretation pipeline
 │   ├── test_llm.py                 # Single variant test
-│   ├── repair_interpretations.py   # Rate limit error recovery
+│   ├── repair_interpretations.py   # Rate-limit error recovery
 │   ├── evaluation_llm.py           # Evaluation framework
 │   ├── confidence_score.py         # Confidence scoring
-│   ├── repair_interpretations.py   # Rate-limit error recovery
 │   └── app.py                      # Streamlit interface
-├── data/			                  # Not tracked, see data requirements section
-
+├── data/                           # Not tracked — see Data Requirements below
+└── README.md
 ```
+
+---
 
 ## Data Requirements
 
-The `data/` directory is excluded from this repository. To reproduce the pipeline,
-download the following files and place them in a `data/` folder:
+The `data/` directory is excluded from this repository. To reproduce the
+pipeline, download the following files and place them in a `data/` folder:
 
 | File | Source | Instructions |
-|---|---|---|
-| `variant_summary.txt.gz` | [ClinVar FTP](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/) | Direct download |
-| `Cosmic_MutantCensus_v103_GRCh37.tsv` | [COSMIC Downloads](https://cancer.sanger.ac.uk/cosmic/download) | Requires free registration |
-| `Cosmic_Classification_v103_GRCh37.tsv` | [COSMIC Downloads](https://cancer.sanger.ac.uk/cosmic/download) | Requires free registration |
+| --- | --- | --- |
+| `variant_summary.txt.gz` | ClinVar FTP | Direct download |
+| `Cosmic_MutantCensus_v103_GRCh37.tsv` | COSMIC Downloads | Requires free registration |
+| `Cosmic_Classification_v103_GRCh37.tsv` | COSMIC Downloads | Requires free registration |
 
 ---
 
 ## How to Run
 
 ### Requirements
+
 ```bash
-pip install pandas requests groq streamlit python-dotenv
+pip install -r requirements.txt
 ```
 
 ### Environment setup
+
 ```bash
 export GROQ_API_KEY="your_groq_api_key"
 ```
 
 ### Run the full pipeline
+
 ```bash
 # Step 1: Build dataset
 python src/build_dataset.py
-python src/clean_labels.py
+python src/cleaned_labels.py
 
 # Step 2: Annotate variants
 python src/annotate_variants.py
 
 # Step 3: COSMIC integration
 python src/integrate_cosmic.py
+python src/add_tumor_types.py
 
 # Step 4: Fix missing annotations
 python src/fix_missing_annotations.py
@@ -163,11 +239,12 @@ python src/confidence_score.py
 # Step 7: Evaluation
 python src/evaluation_llm.py
 
-# Step 8: Repair any Rate-Limit/Connection errors
+# Step 8: Repair any rate-limit errors
 python src/repair_interpretations.py
 ```
 
 ### Launch the web interface
+
 ```bash
 streamlit run src/app.py --server.port 8501 --server.address 0.0.0.0
 ```
@@ -177,7 +254,7 @@ streamlit run src/app.py --server.port 8501 --server.address 0.0.0.0
 ## Data Sources
 
 | Source | Version | Usage |
-|---|---|---|
+| --- | --- | --- |
 | ClinVar | March 2026 | Clinical significance labels |
 | Ensembl VEP | GRCh37 | Functional annotation |
 | COSMIC CMC | v103 GRCh37 | Cancer mutation data |
@@ -186,30 +263,33 @@ streamlit run src/app.py --server.port 8501 --server.address 0.0.0.0
 
 ## Target Genes
 
-BRCA1, TP53, EGFR, KRAS, PTEN
+BRCA1, TP53, EGFR, KRAS, PTEN, APC, MLH1, MSH2, STK11, PALB2
 
-Selected for their established roles in cancer biology covering tumor suppressors,
-oncogenes, and DNA repair genes across multiple cancer types.
+Selected to cover a broad range of cancer biology: tumour suppressors, oncogenes,
+DNA repair genes, and mismatch repair genes across multiple cancer types.
 
 ---
 
 ## Limitations
 
-- Dataset limited to 76 unique variants across 5 genes
-- Groq free tier: 100,000 tokens/day limit
-- API Rate Management: Uses a tiered model approach (70B for primary, 8B for repair) to maximize Groq's daily token quota.
-- Benign non-coding variants underperform due to absent functional scores
-- COSMIC data requires non-commercial license for redistribution
+- Mismatch repair genes (MSH2, MLH1) show lower agreement, partly attributable
+  to gaps in VEP annotation coverage for this gene class
+- Groq free tier: 100,000 tokens/day limit — pipeline uses tiered model approach
+  (LLaMA 3.3 70B primary, LLaMA 3.1 8B for rate-limit recovery)
+- Benign non-coding variants underperform due to absent SIFT/PolyPhen scores,
+  though improved consequence-type reasoning partially mitigates this
+- COSMIC data requires a non-commercial license for redistribution
 
 ---
 
 ## Future Work
 
-- Expand to 500+ variants across more cancer genes
+- Expand to 500+ variants across additional cancer genes
 - Implement RAG (Retrieval Augmented Generation) for literature evidence
-- Add ACMG classification logic
-- Compare against other LLM models
+- Add ACMG/AMP classification logic
+- Compare performance across multiple LLMs (GPT-4o, Gemini, Claude)
 - Validate interpretations with clinical expert review
+- Incorporate splicing predictors to improve non-coding variant performance
 
 ---
 
@@ -217,11 +297,11 @@ oncogenes, and DNA repair genes across multiple cancer types.
 
 - Python 3.9
 - Pandas
-- Groq API (LLaMA 3.3 70B)
+- Groq API (LLaMA 3.3 70B / LLaMA 3.1 8B)
 - Ensembl REST API
 - Streamlit
 - SLURM (HPC job scheduling)
-- Git/GitHub
+- Git / GitHub
 
 ---
 
@@ -229,6 +309,14 @@ oncogenes, and DNA repair genes across multiple cancer types.
 
 MSc Applied Bioinformatics student — Aristotle University of Thessaloniki (AUTH)
 
-*Built independently as a portfolio project, March 2026*
+Independent MSc research project, March 2026
 
-Note: COSMIC data (CMC v103) is used under a non-commercial academic license. Users wishing to replicate this pipeline must obtain independent access from cancer.sanger.ac.uk.
+---
+
+> **Note:** COSMIC data (CMC v103) is used under a non-commercial academic
+> license. Users wishing to replicate this pipeline must obtain independent
+> access from [cancer.sanger.ac.uk](https://cancer.sanger.ac.uk).
+Initial evaluation on the five most well-studied cancer genes with clean
+annotation coverage:
+CategoryAgreementOverall75.0%Pathogenic100.0%Likely pathogenic100.0%Likely benign72.2%Benign28.6%Uncertain significance64.0%
+
