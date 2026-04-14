@@ -105,7 +105,7 @@ tumour suppressor genes, representing a harder and more realistic benchmark:
 | TP53 | 95.0% |
 | PALB2 | 80.0% |
 | PTEN | 77.6% |
-| APC | | 72.9% |
+| APC | 72.9% |
 | KRAS | 70.0% |
 | EGFR | 70.0% |
 | MLH1 | 69.0% |
