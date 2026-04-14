@@ -253,23 +253,19 @@ DNA repair genes, and mismatch repair genes across multiple cancer types.
 
 ## Limitations
 
-- Mismatch repair genes (MSH2, MLH1) show lower agreement, partly attributable
-  to gaps in VEP annotation coverage for this gene class
-- Groq free tier: 100,000 tokens/day limit — pipeline uses tiered model approach
-  (LLaMA 3.3 70B primary, LLaMA 3.1 8B for rate-limit recovery)
-- Benign non-coding variants underperform due to absent SIFT/PolyPhen scores,
-  though improved consequence-type reasoning partially mitigates this
-- COSMIC data requires a non-commercial license for redistribution
+- Gene-Specific Performance Disparity: While the model excels in genes like TP53 (95.0% agreement), lower performance in BRCA1 (47.5%) and MSH2 (56.9%) suggests challenges in interpreting large proteins with high missense variant density.
+- Non-Coding Variant Underperformance: Benign variants in non-coding regions (introns/UTRs) continue to underperform due to the absence of SIFT/PolyPhen scores; while consequence-type reasoning helps, the model often defaults to a "caution-first" Uncertain verdict.
+- API Throughput & Rate Limits: The Groq free-tier (100k tokens/day) necessitates a tiered model approach and a custom repair layer to handle high-volume clinical datasets (N=592).
+- Annotation Gaps: Lower agreement in specific gene classes often reflects gaps in upstream VEP annotation coverage rather than incorrect LLM reasoning.
+- License Restrictions: COSMIC data (v103) requires a non-commercial license for redistribution, limiting the public sharing of the full annotated dataset.
 
 ---
 
 ## Future Work
 
-- Expand to 500+ variants across additional cancer genes
 - Implement RAG (Retrieval Augmented Generation) for literature evidence
 - Add ACMG/AMP classification logic
 - Compare performance across multiple LLMs (GPT-4o, Gemini, Claude)
-- Validate interpretations with clinical expert review
 - Incorporate splicing predictors to improve non-coding variant performance
 
 ---
