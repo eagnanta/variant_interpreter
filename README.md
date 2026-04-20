@@ -1,7 +1,7 @@
 # LLM-Assisted Variant Interpreter
 
 A bioinformatics pipeline that integrates clinical and cancer genomics databases
-with a large language model to generate evidence-based clinical interpretations
+with a Large Language Model to generate evidence-based clinical interpretations
 of genomic variants automatically.
 Built as an independent MSc research project during the 2nd semester of an MSc in
 Applied Bioinformatics at the Aristotle University of Thessaloniki (AUTH).
@@ -134,13 +134,13 @@ Each interpretation is assigned a confidence level based on evidence agreement:
 | MEDIUM | Partial evidence agreement |
 | LOW | Missing scores, conflicting evidence, or VUS |
 
-**Confidence distribution (Phase 2, 593 variants):**
+**Confidence distribution (Phase 2, 592 variants):**
 
 | Confidence | Count |
 | --- | --- |
 | HIGH | 151 |
 | MEDIUM | 231 |
-| LOW | 211 |
+| LOW | 210 |
 
 ---
 
@@ -214,14 +214,15 @@ python src/fix_missing_annotations.py
 # Step 5: LLM pipeline
 python src/run_llm_pipeline.py
 
-# Step 6: Confidence scoring
+# Step 6: Repair any rate-limit errors
+python src/repair_interpretations.py
+
+# Step 7: Confidence scoring
 python src/confidence_score.py
 
-# Step 7: Evaluation
+# Step 8: Evaluation
 python src/evaluation_llm.py
 
-# Step 8: Repair any rate-limit errors
-python src/repair_interpretations.py
 ```
 
 ### Launch the web interface
@@ -293,7 +294,5 @@ Independent MSc research project, March 2026
 > **Note:** COSMIC data (CMC v103) is used under a non-commercial academic
 > license. Users wishing to replicate this pipeline must obtain independent
 > access from [cancer.sanger.ac.uk](https://cancer.sanger.ac.uk).
-Initial evaluation on the five most well-studied cancer genes with clean
-annotation coverage:
-CategoryAgreementOverall75.0%Pathogenic100.0%Likely pathogenic100.0%Likely benign72.2%Benign28.6%Uncertain significance64.0%
+
 
