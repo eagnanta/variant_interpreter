@@ -3,6 +3,7 @@
 A bioinformatics pipeline that integrates clinical and cancer genomics databases
 with a Large Language Model to generate evidence-based clinical interpretations
 of genomic variants automatically.
+
 Built as an independent MSc research project during the 2nd semester of an MSc in
 Applied Bioinformatics at the Aristotle University of Thessaloniki (AUTH).
 
@@ -119,7 +120,7 @@ tumour suppressor genes, representing a harder and more realistic benchmark:
 - Exceptional TP53 Performance (95.0%): The model achieved near-human level accuracy on TP53, demonstrating that LLMs are highly effective at interpreting variants in well-characterized tumor suppressors with dense annotation coverage.
 - High Sensitivity for Likely Benign (87.4%): The pipeline excels at identifying "Likely Benign" variants, significantly reducing the manual burden of filtering out non-actionable mutations.
 - Clinical Conservatism in BRCA1: The lower agreement in BRCA1 (47.5%) is driven by a "caution-first" bias. Disagreement analysis shows the LLM frequently assigns "Uncertain" to missense variants that lack definitive functional scores, rather than making potentially false neutral or damaging calls.
--Durable Reasoning at Scale: Despite moving from 76 to 592 variants, the overall agreement rate remained consistent (~70%), proving the pipeline's logic is robust and scales effectively to larger genomic datasets.
+- Durable Reasoning at Scale: Despite moving from 76 to 592 variants, the overall agreement rate remained consistent (~70%), proving the pipeline's logic is robust and scales effectively to larger genomic datasets.
 - Zero-Error Data Integrity: Through the implementation of a tiered repair layer, the pipeline achieved a 100% success rate in generating interpretations, even when facing high-frequency API rate limits on the Aristotle HPC cluster.
 
 ---
